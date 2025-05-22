@@ -1,0 +1,451 @@
+{
+  "eventos": [
+    {
+      "id": "1",
+      "titulo": "Conferência Anual da Fé",
+      "data": "20-22 de Outubro, 2025",
+      "local": "Auditório Principal da Igreja",
+      "descricao": "Um tempo de renovo espiritual, louvor e aprendizado da Palavra com preletores convidados especiais. Não perca!",
+      "imagem": "https://picsum.photos/seed/conferencia/600/400",
+      "destaque": true,
+      "dataInicio": "2025-10-20",
+      "dataFim": "2025-10-22"
+    },
+    {
+      "id": "2",
+      "titulo": "Acampamento de Jovens Conectados",
+      "data": "15-17 de Novembro, 2025",
+      "local": "Sítio Recanto da Paz",
+      "descricao": "Muita diversão, comunhão e crescimento espiritual para a juventude da nossa igreja. Vagas limitadas!",
+      "imagem": "https://picsum.photos/seed/acampajovens/600/400",
+      "destaque": true,
+      "dataInicio": "2025-11-15",
+      "dataFim": "2025-11-17"
+    },
+    {
+      "id": "3",
+      "titulo": "Cantata de Natal: Luz do Mundo",
+      "data": "15 de Dezembro, 2025 - 19h",
+      "local": "Templo Principal",
+      "descricao": "Celebre o nascimento de Jesus com uma linda apresentação do nosso coral e ministério de louvor. Traga sua família!",
+      "imagem": "https://picsum.photos/seed/cantatanatal/600/400",
+      "destaque": true,
+      "dataInicio": "2025-12-15",
+      "dataFim": "2025-12-15"
+    },
+    {
+      "id": "4",
+      "titulo": "Seminário para Casais",
+      "data": "25 de Janeiro, 2026 - 09h às 17h",
+      "local": "Salão Social",
+      "descricao": "Fortaleça seu casamento com princípios bíblicos e ferramentas práticas para um relacionamento saudável e feliz.",
+      "imagem": "https://picsum.photos/seed/seminariocasais/600/400",
+      "destaque": false,
+      "dataInicio": "2026-01-25",
+      "dataFim": "2026-01-25"
+    }
+  ],
+  "ministerios": [
+    {
+      "id": "1",
+      "nome": "Boas-vindas",
+      "slug": "boas-vindas",
+      "imagem": "https://picsum.photos/seed/boasvindas/600/400",
+      "descricaoCurta": "Nosso ministério de Boas-vindas está pronto para receber você e sua família com alegria e amor, tornando sua experiência em nossa igreja a mais acolhedora possível.",
+      "descricaoCompleta": "O Ministério de Boas-vindas é a porta de entrada da nossa igreja. Somos responsáveis por receber os visitantes, membros e amigos com um sorriso no rosto e o coração aberto. Nosso objetivo é fazer com que todos se sintam bem-vindos e amados desde o primeiro momento em que entram em nossa igreja. Trabalhamos para criar um ambiente acolhedor e caloroso, onde as pessoas possam se sentir à vontade para adorar a Deus e crescer na fé.",
+      "lideranca": "João e Maria Silva",
+      "contato": "boasvindas@pib.org.br",
+      "horarioEncontros": "Domingos, 30 minutos antes dos cultos",
+      "fotos": [
+        "https://picsum.photos/seed/boasvindas1/600/400",
+        "https://picsum.photos/seed/boasvindas2/600/400",
+        "https://picsum.photos/seed/boasvindas3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Kids",
+      "slug": "kids",
+      "imagem": "https://picsum.photos/seed/kids/600/400",
+      "descricaoCurta": "Um espaço seguro e divertido onde as crianças aprendem sobre o amor de Deus através de atividades lúdicas, músicas e histórias bíblicas.",
+      "descricaoCompleta": "O Ministério Kids é dedicado a ensinar as crianças sobre o amor de Deus de maneira divertida e significativa. Através de histórias bíblicas, músicas, brincadeiras e atividades criativas, ajudamos as crianças a desenvolverem um relacionamento pessoal com Jesus desde cedo. Nosso objetivo é plantar sementes de fé que crescerão ao longo da vida delas. Contamos com uma equipe treinada e apaixonada por crianças, em um ambiente seguro e acolhedor.",
+      "lideranca": "Ana Paula Oliveira",
+      "contato": "kids@pib.org.br",
+      "horarioEncontros": "Domingos, durante os cultos matutino e vespertino",
+      "fotos": [
+        "https://picsum.photos/seed/kids1/600/400",
+        "https://picsum.photos/seed/kids2/600/400",
+        "https://picsum.photos/seed/kids3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Estação Jovem",
+      "slug": "estacao-jovem",
+      "imagem": "https://picsum.photos/seed/jovens/600/400",
+      "descricaoCurta": "Conectando jovens com Deus e uns com os outros, através de encontros dinâmicos, estudos bíblicos relevantes e momentos de comunhão e serviço.",
+      "descricaoCompleta": "O Ministério Estação Jovem é um espaço onde os jovens podem crescer espiritualmente, fazer amizades verdadeiras e descobrir seus dons e talentos para servir a Deus. Realizamos encontros semanais com louvor, mensagens relevantes para a juventude atual e momentos de comunhão. Também promovemos retiros, ações sociais e atividades recreativas. Nosso objetivo é formar uma geração de jovens comprometidos com Cristo e preparados para impactar o mundo.",
+      "lideranca": "Lucas Mendes",
+      "contato": "jovens@pib.org.br",
+      "horarioEncontros": "Sábados, 19h",
+      "fotos": [
+        "https://picsum.photos/seed/jovens1/600/400",
+        "https://picsum.photos/seed/jovens2/600/400",
+        "https://picsum.photos/seed/jovens3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "Teens de Primeira",
+      "slug": "teens-de-primeira",
+      "imagem": "https://picsum.photos/seed/teens/600/400",
+      "descricaoCurta": "Acompanhando os adolescentes em sua jornada de fé, com desafios, amizades e aprendizado da Palavra para uma vida com propósito.",
+      "descricaoCompleta": "O Ministério Teens de Primeira foi criado especialmente para adolescentes de 12 a 17 anos. Entendemos que esta é uma fase de muitas descobertas e desafios, por isso oferecemos um ambiente onde eles podem encontrar respostas para suas dúvidas, fazer amizades saudáveis e crescer na fé. Através de estudos bíblicos dinâmicos, jogos, acampamentos e momentos de louvor, ajudamos os adolescentes a construírem uma base sólida em Cristo para enfrentarem os desafios da vida.",
+      "lideranca": "Gabriel e Juliana Costa",
+      "contato": "teens@pib.org.br",
+      "horarioEncontros": "Domingos, 17h",
+      "fotos": [
+        "https://picsum.photos/seed/teens1/600/400",
+        "https://picsum.photos/seed/teens2/600/400",
+        "https://picsum.photos/seed/teens3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "Mulheres MCM",
+      "slug": "mulheres-mcm",
+      "imagem": "https://picsum.photos/seed/mulheres/600/400",
+      "descricaoCurta": "Mulheres Conectadas em Missão: fortalecendo laços, crescendo espiritualmente e servindo juntas na obra do Senhor, inspirando umas às outras.",
+      "descricaoCompleta": "O Ministério de Mulheres MCM (Mulheres Conectadas em Missão) é um espaço onde as mulheres da nossa igreja e comunidade podem encontrar apoio, amizade e crescimento espiritual. Realizamos encontros mensais com estudos bíblicos, palestras sobre temas relevantes para a mulher cristã, momentos de oração e comunhão. Também organizamos retiros, cafés da manhã especiais e projetos missionários. Nosso objetivo é fortalecer cada mulher em sua caminhada com Deus e em seus diversos papéis na família, igreja e sociedade.",
+      "lideranca": "Débora Santos",
+      "contato": "mulheres@pib.org.br",
+      "horarioEncontros": "Último sábado do mês, 15h",
+      "fotos": [
+        "https://picsum.photos/seed/mulheres1/600/400",
+        "https://picsum.photos/seed/mulheres2/600/400",
+        "https://picsum.photos/seed/mulheres3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "id": "6",
+      "nome": "Comunicação",
+      "slug": "comunicacao",
+      "imagem": "https://picsum.photos/seed/comunicacao/600/400",
+      "descricaoCurta": "Levando a mensagem do Evangelho e as boas novas da nossa igreja a todos, utilizando as mais diversas ferramentas e plataformas de comunicação.",
+      "descricaoCompleta": "O Ministério de Comunicação é responsável por divulgar as atividades da igreja, produzir conteúdos para as redes sociais, gerenciar o site e criar materiais gráficos para eventos e campanhas. Trabalhamos para que a mensagem do Evangelho e as informações sobre nossa igreja alcancem o maior número de pessoas possível, utilizando a tecnologia e a criatividade a serviço do Reino de Deus. Nossa equipe é formada por pessoas com habilidades em design, fotografia, vídeo, redação e gerenciamento de redes sociais.",
+      "lideranca": "Felipe Rodrigues",
+      "contato": "comunicacao@pib.org.br",
+      "horarioEncontros": "Reuniões quinzenais, terças-feiras às 19h",
+      "fotos": [
+        "https://picsum.photos/seed/comunicacao1/600/400",
+        "https://picsum.photos/seed/comunicacao2/600/400",
+        "https://picsum.photos/seed/comunicacao3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "id": "7",
+      "nome": "Louvor",
+      "slug": "louvor",
+      "imagem": "https://picsum.photos/seed/louvor/600/400",
+      "descricaoCurta": "Adorando a Deus com excelência através da música, conduzindo a igreja em momentos de profunda conexão espiritual e celebração.",
+      "descricaoCompleta": "O Ministério de Louvor tem como missão conduzir a igreja na adoração a Deus através da música. Buscamos a excelência musical e espiritual, preparando cada momento de louvor com dedicação e oração. Nossa equipe é formada por músicos, cantores e técnicos de som e multimídia, todos comprometidos em criar um ambiente propício para que a congregação tenha um encontro genuíno com Deus. Além de participar dos cultos regulares, também organizamos noites de louvor e adoração e apoiamos eventos especiais da igreja.",
+      "lideranca": "Thiago e Fernanda Lima",
+      "contato": "louvor@pib.org.br",
+      "horarioEncontros": "Ensaios às quintas-feiras, 19h30",
+      "fotos": [
+        "https://picsum.photos/seed/louvor1/600/400",
+        "https://picsum.photos/seed/louvor2/600/400",
+        "https://picsum.photos/seed/louvor3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "id": "8",
+      "nome": "Oração",
+      "slug": "oracao",
+      "imagem": "https://picsum.photos/seed/oracao/600/400",
+      "descricaoCurta": "Intercedendo pela igreja, pela cidade e pelo mundo, crendo no poder da oração para transformar vidas e realidades.",
+      "descricaoCompleta": "O Ministério de Oração é o coração pulsante da nossa igreja. Somos um grupo de intercessores comprometidos em buscar a face de Deus em favor da igreja, da cidade e do mundo. Realizamos vigílias, correntes de oração e momentos específicos de intercessão antes dos cultos e durante a semana. Também mantemos uma sala de oração aberta em horários específicos, onde qualquer pessoa pode receber atendimento e oração personalizada. Cremos que a oração move o braço de Deus e é essencial para o avivamento e crescimento espiritual.",
+      "lideranca": "Dona Antônia e Pastor José",
+      "contato": "oracao@pib.org.br",
+      "horarioEncontros": "Terças-feiras, 6h e 19h",
+      "fotos": [
+        "https://picsum.photos/seed/oracao1/600/400",
+        "https://picsum.photos/seed/oracao2/600/400",
+        "https://picsum.photos/seed/oracao3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      ]
+    }
+  ],
+  "cultos": [
+    {
+      "id": "1",
+      "dia": "Domingo",
+      "horarios": [
+        {
+          "hora": "09:00",
+          "descricao": "Escola Bíblica Dominical"
+        },
+        {
+          "hora": "10:30",
+          "descricao": "Culto de Celebração Matutino"
+        },
+        {
+          "hora": "18:00",
+          "descricao": "Culto de Celebração Vespertino"
+        }
+      ],
+      "onlineLink": "https://youtube.com/suaigrejaaovivo",
+      "local": "Templo Principal - Rua Exemplo, 123 - Bairro, Cidade - UF"
+    },
+    {
+      "id": "2",
+      "dia": "Quarta-feira",
+      "horarios": [
+        {
+          "hora": "19:30",
+          "descricao": "Culto de Oração e Estudo Bíblico"
+        }
+      ],
+      "local": "Templo Principal - Rua Exemplo, 123 - Bairro, Cidade - UF"
+    },
+    {
+      "id": "3",
+      "dia": "Sexta-feira",
+      "horarios": [
+        {
+          "hora": "20:00",
+          "descricao": "Culto de Jovens"
+        }
+      ],
+      "local": "Salão Social - Rua Exemplo, 123 - Bairro, Cidade - UF"
+    }
+  ],
+  "muralPiedade": [
+    {
+      "id": "1",
+      "autor": "Ana Silva",
+      "data": "14 de Maio, 2025",
+      "texto": "Peço orações pela saúde da minha mãe, que passará por uma cirurgia importante na próxima semana. Que Deus guie as mãos dos médicos e traga a cura.",
+      "interacoes": 20,
+      "comentarios": [
+        {
+          "id": 1,
+          "autor": "João Paulo",
+          "data": "14 de Maio, 2025",
+          "texto": "Estamos orando por sua mãe, Ana. Deus está no controle!"
+        },
+        {
+          "id": 2,
+          "autor": "Maria Oliveira",
+          "data": "15 de Maio, 2025",
+          "texto": "Que o Senhor traga conforto e cura. Estou intercedendo."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "autor": "Carlos Pereira",
+      "data": "13 de Maio, 2025",
+      "texto": "Gostaria de pedir oração por um novo desafio profissional que estou enfrentando. Que o Senhor me dê sabedoria e direção em todas as decisões.",
+      "interacoes": 22,
+      "comentarios": [
+        {
+          "id": 3,
+          "autor": "Pastor José",
+          "data": "13 de Maio, 2025",
+          "texto": "Deus te dará a sabedoria necessária, Carlos. Estamos orando por você."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "autor": "Família Santos",
+      "data": "12 de Maio, 2025",
+      "texto": "Oramos por paz e conforto para nossa família neste momento de luto. Agradecemos o apoio e as orações de todos.",
+      "interacoes": 30,
+      "comentarios": [
+        {
+          "id": 4,
+          "autor": "Débora Lima",
+          "data": "12 de Maio, 2025",
+          "texto": "Que Deus console seus corações. Estamos ao lado de vocês neste momento difícil."
+        },
+        {
+          "id": 5,
+          "autor": "Grupo de Oração",
+          "data": "13 de Maio, 2025",
+          "texto": "Estamos intercedendo pela família. Que o Espírito Santo traga o consolo que só Ele pode dar."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "autor": "Juliana Costa",
+      "data": "11 de Maio, 2025",
+      "texto": "Peço oração pelos meus estudos e pelas provas finais da faculdade. Que Deus me dê concentração e clareza para alcançar bons resultados.",
+      "interacoes": 19,
+      "comentarios": [
+        {
+          "id": 6,
+          "autor": "Ministério de Jovens",
+          "data": "11 de Maio, 2025",
+          "texto": "Estamos orando por você, Juliana! Deus te dará sabedoria e tranquilidade."
+        }
+      ]
+    },
+    {
+      "id": "fc41",
+      "autor": "Bruno ",
+      "texto": "Preciso de ajuda",
+      "data": "19 de maio de 2025",
+      "interacoes": 0,
+      "comentarios": []
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "email": "admin@pib.org.br",
+      "senha": "admin123",
+      "perfil": "admin",
+      "dataCadastro": "2025-01-01"
+    },
+    {
+      "id": "2",
+      "nome": "João Silva",
+      "email": "joao@exemplo.com",
+      "senha": "senha123",
+      "perfil": "membro",
+      "dataCadastro": "2025-03-15",
+      "telefone": "(11) 98765-4321",
+      "dataNascimento": "1990-05-20"
+    },
+    {
+      "id": "4ef5",
+      "nome": "Bruno Wener de Sousa",
+      "email": "bruno.wener.sousa82@gmail.com",
+      "senha": "gaby",
+      "perfil": "membro",
+      "dataCadastro": "2025-05-17T19:49:33.452Z",
+      "telefone": "16994227245",
+      "dataNascimento": "1997-08-19"
+    },
+    {
+      "id": "e0c9",
+      "nome": "Bruno Wener de Sousa",
+      "email": "teste@teste",
+      "senha": "olá",
+      "perfil": "membro",
+      "dataCadastro": "2025-05-17T19:51:03.332Z",
+      "telefone": "16994227245",
+      "dataNascimento": ""
+    },
+    {
+      "id": "1cf0",
+      "nome": "Bruno Wener de Sousa",
+      "email": "email@email.com",
+      "senha": "aaa",
+      "perfil": "membro",
+      "dataCadastro": "2025-05-20T01:07:06.190Z",
+      "telefone": "16994227245",
+      "dataNascimento": "2025-05-13"
+    }
+  ],
+  "inscricoes": [
+    {
+      "id": "1",
+      "nome": "Maria Oliveira",
+      "email": "maria@exemplo.com",
+      "telefone": "(11) 91234-5678",
+      "ministerio": "Louvor",
+      "mensagem": "Gostaria de participar do ministério de louvor como tecladista. Tenho experiência de 5 anos tocando em outra igreja.",
+      "data": "2025-04-10"
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "Culto de Celebração - 10/05/2025",
+      "descricao": "Culto de Celebração com a mensagem 'O Poder da Gratidão' pelo Pastor Principal.",
+      "thumbnail": "https://picsum.photos/seed/culto1/600/400",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "data": "2025-05-10",
+      "destaque": true,
+      "categoria": "cultos"
+    },
+    {
+      "id": "2",
+      "titulo": "Louvor e Adoração - Coletânea Maio 2025",
+      "descricao": "Momentos especiais de louvor e adoração do mês de maio de 2025.",
+      "thumbnail": "https://picsum.photos/seed/louvor1/600/400",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "data": "2025-05-31",
+      "destaque": true,
+      "categoria": "louvor"
+    },
+    {
+      "id": "3",
+      "titulo": "Estudo Bíblico - O Livro de Tiago",
+      "descricao": "Estudo bíblico sobre o livro de Tiago e suas aplicações práticas para a vida cristã.",
+      "thumbnail": "https://picsum.photos/seed/estudo1/600/400",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "data": "2025-05-05",
+      "destaque": false,
+      "categoria": "estudos"
+    },
+    {
+      "id": "4",
+      "titulo": "Testemunho - A Transformação de Paulo",
+      "descricao": "Paulo compartilha seu testemunho de como Deus transformou sua vida e o libertou das drogas.",
+      "thumbnail": "https://picsum.photos/seed/testemunho1/600/400",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "data": "2025-04-28",
+      "destaque": false,
+      "categoria": "testemunhos"
+    }
+  ],
+  "contribuicao": {
+    "pix": {
+      "chave": "45.310.554/0001-23",
+      "banco": "Banco do Brasil",
+      "titular": "Primeira Igreja Batista Em Franca/SP",
+      "qrCodeUrl": "./src/assets/QRcode.png"
+    },
+    "contaBancaria": {
+      "banco": "Banco do Itaú",
+      "agencia": "0000",
+      "conta": "00000-0",
+      "titular": "Primeira Igreja Batista Em Franca/SP",
+      "cnpj": "45.310.554/0001-23"
+    },
+    "contato": {
+      "telefone": "(16) 3403-4383",
+      "whatsapp": "(16) 3403-4383",
+      "email": "financeiro@pib.org.br"
+    }
+  }
+}
