@@ -3,17 +3,24 @@ import { Eventos } from "../../types/events";
 
 
 
-export const fetchEventos = async (): Promise<Eventos[] | null> => {
+export const fetchEventos = async(id: string):Promise<Eventos> =>{
+  if (!id) {
+      throw new Error('ID não fornecido');
+  }
   try {
-    const response = await axios.get("http://localhost:3001/api/eventos");
-
-    if (!response.data || !Array.isArray(response.data.eventos)) {  
-      throw new Error(`Erro na requisição: ${response.status}`);
+      const response = await axios.get(`http://localhost:3001/eventos?id=${id}`)
+        if(response.data && response.data.length >0){
+            return response.data[0]
+        } else{
+            throw new Error('Evento não encontrado');
+        }
+    } catch (error) {
+        throw new Error('Erro ao buscar Evento');
     }
 
-    return response.data.eventos as Eventos[];
-  } catch (error) {
-    console.error("Erro ao buscar eventos:", error);
-    return null;
-  }
-};
+
+
+
+
+
+}

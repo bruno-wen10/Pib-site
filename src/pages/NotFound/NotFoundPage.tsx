@@ -28,7 +28,7 @@ const IconWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: ${theme.fontSizes.xxxlarge};
+  font-size: ${theme.fontSizes.xxlarge};
   color: ${theme.colors.primary};
   font-family: ${theme.fonts.heading};
   margin-bottom: ${theme.spacings.small};
@@ -59,6 +59,7 @@ const HomeButton = styled(Link)`
   }
 
   &:hover {
+    color: ${theme.colors.white};
     background-color: ${theme.colors.secondary};
     transform: translateY(-2px);
   }

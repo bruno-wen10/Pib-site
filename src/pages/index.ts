@@ -2,7 +2,9 @@ export { default as HomePage } from './Home/HomePage';
 export { default as PibPage } from './Pib/PibPage'; // Placeholder, a ser implementado
 export { default as MinisteriosListPage } from './Ministerios/MinisteriosListPage';
 export { default as MinisterioPage } from './Ministerios/MinisterioPage'; // Página dinâmica para cada ministério
-export { default as EventosPage } from './Eventos/EventosPage';
+export { default as EventosPageList } from './Eventos/EventosPage-List';
+export { default as EventoPage } from './Eventos/EventoPage';
+
 export { default as InscricoesPage } from './Inscricoes/InscricoesPage';
 export { default as CultosPage } from './Cultos/CultosPage';
 export { default as MuralPiedadePage } from './MuralPiedade/MuralPiedadePage';

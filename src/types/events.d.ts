@@ -2,12 +2,20 @@
 
 export type Eventos = {
   id: string;
+  lideranca_responsavel?: string;
+  inscricao?: string;
   titulo: string;
   data: string;
   local: string;
   descricao: string;
+  sobre_evento?: string;
   imagem: string;
   destaque: boolean;
-  dataInicio: string; // formato ISO: "YYYY-MM-DD"
-  dataFim: string;    // formato ISO: "YYYY-MM-DD"
+  dataInicio: string;
+  dataFim?: string;
+  fotos?: string[];
+  videosYoutube?: string[];
 };
+
+
+

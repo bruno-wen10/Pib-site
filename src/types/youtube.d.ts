@@ -8,33 +8,43 @@ export interface Video {
 }
 
 // Objeto retornado quando Busca Videos Rescentes no Canal
-export interface YouTubeSearchResult {
-  kind: string;
+export interface YouTubeSearchVideos {
+ kind: string;
   etag: string;
-  id: {
+  nextPageToken?: string;
+  regionCode?: string;
+  pageInfo: {
+    totalResults: number;
+    resultsPerPage: number;
+  };
+  items: {
     kind: string;
-    videoId?: string;
-    channelId?: string;
-    playlistId?: string;
-  };
-  snippet: {
-    publishedAt: string;
-    channelId: string;
-    title: string;
-    description: string;
-    thumbnails: {
-      default: { url: string; width?: number; height?: number };
-      medium?: { url: string; width?: number; height?: number };
-      high?: { url: string; width?: number; height?: number };
+    etag: string;
+    id: {
+      kind: string;
+      videoId?: string;
+      channelId?: string;
+      playlistId?: string;
     };
-    channelTitle: string;
-    liveBroadcastContent: 'live' | 'upcoming' | 'none';
-    publishTime?: string;
-  };
+    snippet: {
+      publishedAt: string;
+      channelId: string;
+      title: string;
+      description: string;
+      thumbnails: {
+        default: { url: string; width?: number; height?: number };
+        medium?: { url: string; width?: number; height?: number };
+        high?: { url: string; width?: number; height?: number };
+      };
+      channelTitle: string;
+      liveBroadcastContent: 'live' | 'upcoming' | 'none';
+      publishTime?: string;
+    };
+  }[];
 }
 
 //Objeto retornado quando Verifica transmissão ao vivo no canal
-export interface YouTubeSearchResponse {
+export interface YouTubeSearchLives {
   kind: string;
   etag: string;
   nextPageToken?: string;

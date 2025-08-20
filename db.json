@@ -1,48 +1,92 @@
 {
   "eventos": [
     {
-      "id": "1",
+      "id": 1,
+      "lideranca_responsavel": "Bruno Wener de Sousa",
+      "inscricao": "https://www.exemplo.com/inscricao-conferencia-anual",
       "titulo": "Conferência Anual da Fé",
       "data": "20-22 de Outubro, 2025",
       "local": "Auditório Principal da Igreja",
       "descricao": "Um tempo de renovo espiritual, louvor e aprendizado da Palavra com preletores convidados especiais. Não perca!",
+      "sobre_evento": "A Conferência Anual da Fé é um evento imperdível para todos os membros e amigos da nossa igreja. Durante três dias, teremos momentos intensos de louvor, adoração e ensino bíblico com preletores convidados que trarão mensagens inspiradoras e desafiadoras. Será uma oportunidade única para fortalecer sua fé, renovar seu compromisso com Deus e se conectar com outros irmãos na fé. Haverá também workshops, momentos de oração e comunhão. Traga sua família e amigos para juntos vivermos esse tempo especial na presença do Senhor.",
       "imagem": "https://picsum.photos/seed/conferencia/600/400",
       "destaque": true,
       "dataInicio": "2025-10-20",
-      "dataFim": "2025-10-22"
+      "dataFim": "2025-10-22",
+      "fotos": [
+        "https://picsum.photos/seed/boasvindas1/600/400",
+        "https://picsum.photos/seed/boasvindas2/600/400",
+        "https://picsum.photos/seed/boasvindas3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
+      ]
     },
     {
-      "id": "2",
+      "id": 2,
       "titulo": "Acampamento de Jovens Conectados",
-      "data": "15-17 de Novembro, 2025",
+      "lideranca_responsavel": "Ana Clara Silva",
+      "inscricao": "https://www.exemplo.com/inscricao-acampamento-jovens",
+      "data": "15 de Dezembro, 2025 - 19h",
       "local": "Sítio Recanto da Paz",
       "descricao": "Muita diversão, comunhão e crescimento espiritual para a juventude da nossa igreja. Vagas limitadas!",
+      "sobre_evento": "O Acampamento de Jovens Conectados é uma oportunidade incrível para os jovens da nossa igreja se reunirem, se divertirem e crescerem espiritualmente. Durante três dias, teremos atividades ao ar livre, momentos de reflexão e ensino bíblico, além de muita música e diversão. Não perca a chance de fazer novos amigos e fortalecer sua fé!",
       "imagem": "https://picsum.photos/seed/acampajovens/600/400",
       "destaque": true,
       "dataInicio": "2025-11-15",
-      "dataFim": "2025-11-17"
+      "dataFim": "2025-11-17",
+      "fotos": [
+        "https://picsum.photos/seed/boasvindas1/600/400",
+        "https://picsum.photos/seed/boasvindas2/600/400",
+        "https://picsum.photos/seed/boasvindas3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
+      ]
     },
     {
-      "id": "3",
+      "id": 3,
+      "lideranca_responsavel": "Carlos Silva",
+      "inscricao": "https://www.exemplo.com/inscricao-cantata-natal",
       "titulo": "Cantata de Natal: Luz do Mundo",
       "data": "15 de Dezembro, 2025 - 19h",
       "local": "Templo Principal",
       "descricao": "Celebre o nascimento de Jesus com uma linda apresentação do nosso coral e ministério de louvor. Traga sua família!",
+      "sobre_evento": "A Cantata de Natal: Luz do Mundo é uma celebração especial do nascimento de Jesus, apresentada pelo nosso talentoso coral e ministério de louvor. Venha e traga sua família para desfrutar de uma noite de adoração e alegria, enquanto celebramos o verdadeiro significado do Natal.",
       "imagem": "https://picsum.photos/seed/cantatanatal/600/400",
       "destaque": true,
       "dataInicio": "2025-12-15",
-      "dataFim": "2025-12-15"
+      "dataFim": "2025-12-15",
+      "fotos": [
+        "https://picsum.photos/seed/boasvindas1/600/400",
+        "https://picsum.photos/seed/boasvindas2/600/400",
+        "https://picsum.photos/seed/boasvindas3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
+      ]
     },
     {
-      "id": "4",
+      "id": 4,
       "titulo": "Seminário para Casais",
+      "lideranca_responsavel": "Bruno Wener de Sousa",
+      "inscricao": "https://www.exemplo.com/inscricao-seminario-casais",
       "data": "25 de Janeiro, 2026 - 09h às 17h",
       "local": "Salão Social",
       "descricao": "Fortaleça seu casamento com princípios bíblicos e ferramentas práticas para um relacionamento saudável e feliz.",
+      "sobre_evento": "O Seminário para Casais é uma oportunidade única para casais fortalecerem seu relacionamento através de ensinamentos bíblicos e dinâmicas de grupo. Com a orientação de especialistas, os participantes aprenderão a construir uma base sólida para o casamento, abordando temas como comunicação, resolução de conflitos e intimidade. Não perca essa chance de investir no seu relacionamento!",
       "imagem": "https://picsum.photos/seed/seminariocasais/600/400",
-      "destaque": false,
+      "destaque": true,
       "dataInicio": "2026-01-25",
-      "dataFim": "2026-01-25"
+      "dataFim": "2026-01-25",
+      "fotos": [
+        "https://picsum.photos/seed/boasvindas1/600/400",
+        "https://picsum.photos/seed/boasvindas2/600/400",
+        "https://picsum.photos/seed/boasvindas3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
+      ]
     }
   ],
   "ministerios": [
@@ -53,16 +97,16 @@
       "imagem": "https://picsum.photos/seed/boasvindas/600/400",
       "descricaoCurta": "Nosso ministério de Boas-vindas está pronto para receber você e sua família com alegria e amor, tornando sua experiência em nossa igreja a mais acolhedora possível.",
       "descricaoCompleta": "O Ministério de Boas-vindas é a porta de entrada da nossa igreja. Somos responsáveis por receber os visitantes, membros e amigos com um sorriso no rosto e o coração aberto. Nosso objetivo é fazer com que todos se sintam bem-vindos e amados desde o primeiro momento em que entram em nossa igreja. Trabalhamos para criar um ambiente acolhedor e caloroso, onde as pessoas possam se sentir à vontade para adorar a Deus e crescer na fé.",
-      "lideranca": "João e Maria Silva",
-      "contato": "boasvindas@pib.org.br",
-      "horarioEncontros": "Domingos, 30 minutos antes dos cultos",
+      "lideranca": "Bruno Wener e Gabrielle Vicelli",
+      "contato": "pibfranca@pibfranca.org.br",
+      "horarioEncontros": "Busque sua lembrancinha após o culto",
       "fotos": [
         "https://picsum.photos/seed/boasvindas1/600/400",
         "https://picsum.photos/seed/boasvindas2/600/400",
         "https://picsum.photos/seed/boasvindas3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     },
     {
@@ -72,16 +116,16 @@
       "imagem": "https://picsum.photos/seed/kids/600/400",
       "descricaoCurta": "Um espaço seguro e divertido onde as crianças aprendem sobre o amor de Deus através de atividades lúdicas, músicas e histórias bíblicas.",
       "descricaoCompleta": "O Ministério Kids é dedicado a ensinar as crianças sobre o amor de Deus de maneira divertida e significativa. Através de histórias bíblicas, músicas, brincadeiras e atividades criativas, ajudamos as crianças a desenvolverem um relacionamento pessoal com Jesus desde cedo. Nosso objetivo é plantar sementes de fé que crescerão ao longo da vida delas. Contamos com uma equipe treinada e apaixonada por crianças, em um ambiente seguro e acolhedor.",
-      "lideranca": "Ana Paula Oliveira",
-      "contato": "kids@pib.org.br",
-      "horarioEncontros": "Domingos, durante os cultos matutino e vespertino",
+      "lideranca": "Ana Carolina Moreira, Isaque e Shaiene",
+      "contato": "pibfranca@pibfranca.org.br",
+      "horarioEncontros": "Em todos os horários de cultos",
       "fotos": [
         "https://picsum.photos/seed/kids1/600/400",
         "https://picsum.photos/seed/kids2/600/400",
         "https://picsum.photos/seed/kids3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     },
     {
@@ -92,7 +136,7 @@
       "descricaoCurta": "Conectando jovens com Deus e uns com os outros, através de encontros dinâmicos, estudos bíblicos relevantes e momentos de comunhão e serviço.",
       "descricaoCompleta": "O Ministério Estação Jovem é um espaço onde os jovens podem crescer espiritualmente, fazer amizades verdadeiras e descobrir seus dons e talentos para servir a Deus. Realizamos encontros semanais com louvor, mensagens relevantes para a juventude atual e momentos de comunhão. Também promovemos retiros, ações sociais e atividades recreativas. Nosso objetivo é formar uma geração de jovens comprometidos com Cristo e preparados para impactar o mundo.",
       "lideranca": "Lucas Mendes",
-      "contato": "jovens@pib.org.br",
+      "contato": "pibfranca@pibfranca.org.br",
       "horarioEncontros": "Sábados, 19h",
       "fotos": [
         "https://picsum.photos/seed/jovens1/600/400",
@@ -100,7 +144,7 @@
         "https://picsum.photos/seed/jovens3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     },
     {
@@ -111,7 +155,7 @@
       "descricaoCurta": "Acompanhando os adolescentes em sua jornada de fé, com desafios, amizades e aprendizado da Palavra para uma vida com propósito.",
       "descricaoCompleta": "O Ministério Teens de Primeira foi criado especialmente para adolescentes de 12 a 17 anos. Entendemos que esta é uma fase de muitas descobertas e desafios, por isso oferecemos um ambiente onde eles podem encontrar respostas para suas dúvidas, fazer amizades saudáveis e crescer na fé. Através de estudos bíblicos dinâmicos, jogos, acampamentos e momentos de louvor, ajudamos os adolescentes a construírem uma base sólida em Cristo para enfrentarem os desafios da vida.",
       "lideranca": "Gabriel e Juliana Costa",
-      "contato": "teens@pib.org.br",
+      "contato": "pibfranca@pibfranca.org.br",
       "horarioEncontros": "Domingos, 17h",
       "fotos": [
         "https://picsum.photos/seed/teens1/600/400",
@@ -119,7 +163,7 @@
         "https://picsum.photos/seed/teens3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     },
     {
@@ -130,7 +174,7 @@
       "descricaoCurta": "Mulheres Conectadas em Missão: fortalecendo laços, crescendo espiritualmente e servindo juntas na obra do Senhor, inspirando umas às outras.",
       "descricaoCompleta": "O Ministério de Mulheres MCM (Mulheres Conectadas em Missão) é um espaço onde as mulheres da nossa igreja e comunidade podem encontrar apoio, amizade e crescimento espiritual. Realizamos encontros mensais com estudos bíblicos, palestras sobre temas relevantes para a mulher cristã, momentos de oração e comunhão. Também organizamos retiros, cafés da manhã especiais e projetos missionários. Nosso objetivo é fortalecer cada mulher em sua caminhada com Deus e em seus diversos papéis na família, igreja e sociedade.",
       "lideranca": "Débora Santos",
-      "contato": "mulheres@pib.org.br",
+      "contato": "pibfranca@pibfranca.org.br",
       "horarioEncontros": "Último sábado do mês, 15h",
       "fotos": [
         "https://picsum.photos/seed/mulheres1/600/400",
@@ -138,7 +182,7 @@
         "https://picsum.photos/seed/mulheres3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     },
     {
@@ -157,7 +201,7 @@
         "https://picsum.photos/seed/comunicacao3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     },
     {
@@ -176,7 +220,7 @@
         "https://picsum.photos/seed/louvor3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     },
     {
@@ -195,7 +239,26 @@
         "https://picsum.photos/seed/oracao3/600/400"
       ],
       "videosYoutube": [
-        "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
+      ]
+    },
+    {
+      "id": "9",
+      "nome": "Marketing",
+      "slug": "marketing",
+      "imagem": "https://picsum.photos/seed/marketing/600/400",
+      "descricaoCurta": "Nosso ministério de Marketing é responsável por divulgar as atividades da igreja e engajar a comunidade.",
+      "descricaoCompleta": "O Ministério de Marketing tem como objetivo promover as atividades da igreja e alcançar novos membros. Utilizamos diversas estratégias de comunicação, incluindo redes sociais, e-mail marketing e eventos presenciais, para compartilhar a mensagem do evangelho e as oportunidades de crescimento espiritual na nossa comunidade. Trabalhamos em colaboração com outros ministérios para garantir que todos os eventos sejam bem divulgados e que a igreja esteja sempre conectada com os membros e visitantes.",
+      "lideranca": "Carlos e Ana Souza",
+      "contato": "marketing@pib.org.br",
+      "horarioEncontros": "Domingos, 30 minutos antes dos cultos",
+      "fotos": [
+        "https://picsum.photos/seed/marketing1/600/400",
+        "https://picsum.photos/seed/marketing2/600/400",
+        "https://picsum.photos/seed/boasvindas3/600/400"
+      ],
+      "videosYoutube": [
+        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
       ]
     }
   ],
@@ -249,7 +312,7 @@
       "autor": "Ana Silva",
       "data": "14 de Maio, 2025",
       "texto": "Peço orações pela saúde da minha mãe, que passará por uma cirurgia importante na próxima semana. Que Deus guie as mãos dos médicos e traga a cura.",
-      "interacoes": 20,
+      "interacoes": 23,
       "comentarios": [
         {
           "id": 1,
@@ -323,6 +386,38 @@
       "data": "19 de maio de 2025",
       "interacoes": 0,
       "comentarios": []
+    },
+    {
+      "id": "6067",
+      "autor": "xvcgnhjz",
+      "texto": "sx\\fdhn",
+      "data": "22 de maio de 2025",
+      "interacoes": 1,
+      "comentarios": []
+    },
+    {
+      "id": "7477",
+      "autor": "Bruno ",
+      "texto": "oii",
+      "data": "14 de agosto de 2025",
+      "interacoes": 8,
+      "comentarios": []
+    },
+    {
+      "id": "0658",
+      "autor": "Bruno ",
+      "texto": "bruno \n",
+      "data": "15 de agosto de 2025",
+      "interacoes": 5,
+      "comentarios": []
+    },
+    {
+      "id": "f110",
+      "autor": "Bruno ",
+      "texto": "doente ",
+      "data": "15 de agosto de 2025",
+      "interacoes": 0,
+      "comentarios": []
     }
   ],
   "usuarios": [
@@ -384,6 +479,15 @@
       "ministerio": "Louvor",
       "mensagem": "Gostaria de participar do ministério de louvor como tecladista. Tenho experiência de 5 anos tocando em outra igreja.",
       "data": "2025-04-10"
+    },
+    {
+      "id": "e73a",
+      "nome": "BRUNO WENER DE SOUSA",
+      "email": "bruno.wener.sousa82@gmail.com",
+      "telefone": "16994227245",
+      "ministerio": "Boas-vindas",
+      "mensagem": "Me comunico bem",
+      "data": "2025-08-20T20:45:32.088Z"
     }
   ],
   "videos": [
@@ -392,7 +496,7 @@
       "titulo": "Culto de Celebração - 10/05/2025",
       "descricao": "Culto de Celebração com a mensagem 'O Poder da Gratidão' pelo Pastor Principal.",
       "thumbnail": "https://picsum.photos/seed/culto1/600/400",
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH",
       "data": "2025-05-10",
       "destaque": true,
       "categoria": "cultos"
@@ -402,7 +506,7 @@
       "titulo": "Louvor e Adoração - Coletânea Maio 2025",
       "descricao": "Momentos especiais de louvor e adoração do mês de maio de 2025.",
       "thumbnail": "https://picsum.photos/seed/louvor1/600/400",
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH",
       "data": "2025-05-31",
       "destaque": true,
       "categoria": "louvor"
@@ -412,7 +516,7 @@
       "titulo": "Estudo Bíblico - O Livro de Tiago",
       "descricao": "Estudo bíblico sobre o livro de Tiago e suas aplicações práticas para a vida cristã.",
       "thumbnail": "https://picsum.photos/seed/estudo1/600/400",
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH",
       "data": "2025-05-05",
       "destaque": false,
       "categoria": "estudos"
@@ -422,7 +526,7 @@
       "titulo": "Testemunho - A Transformação de Paulo",
       "descricao": "Paulo compartilha seu testemunho de como Deus transformou sua vida e o libertou das drogas.",
       "thumbnail": "https://picsum.photos/seed/testemunho1/600/400",
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH",
       "data": "2025-04-28",
       "destaque": false,
       "categoria": "testemunhos"

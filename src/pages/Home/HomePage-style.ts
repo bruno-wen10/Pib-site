@@ -228,6 +228,7 @@ export const ContribuaButton = styled(Link)`
     margin-right: ${theme.spacings.xsmall};
   }
   &:hover {
+    color: ${theme.colors.white};
     background-color: ${theme.colors.secondary};
     transform: translateY(-2px);
   }

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { YouTubeSearchResponse } from "@/types/youtube";
+import { YouTubeSearchLives, YouTubeSearchVideos } from "@/types/youtube";
 
 
 
@@ -11,12 +11,12 @@ const youtubeApi = axios.create({
     baseURL: BASE_URL,
     params: {
         key: API_KEY,
-        channelId: CHANNEL_ID,
+        channelId: CHANNEL_ID, 
         part: "snippet"
     },
 })
 // Função para qiue rastreia Lives ao vivos acontecendo no canal 
-export const fetchLiveVideos = async (): Promise<YouTubeSearchResponse> => {
+export const fetchLiveVideos = async (): Promise<YouTubeSearchLives> => {
     try{
         const response = await youtubeApi.get(
            "/search", {
@@ -27,7 +27,7 @@ export const fetchLiveVideos = async (): Promise<YouTubeSearchResponse> => {
            }
         )
         const data = response.data;
-        console.log(data);
+        
         return data;
     } catch (error) {
         console.error("Erro ao buscar vídeos do canal:", error);
@@ -39,7 +39,7 @@ export const fetchLiveVideos = async (): Promise<YouTubeSearchResponse> => {
 }
 
 // Função para buscar vídeos recentes do canal
-export const fetchRecentVideos = async (): Promise<YouTubeSearchResponse> => {
+export const fetchRecentVideos = async (): Promise<YouTubeSearchVideos> => {
     try{
         const response = await youtubeApi.get(
             "/search", {
@@ -51,7 +51,7 @@ export const fetchRecentVideos = async (): Promise<YouTubeSearchResponse> => {
             }
         )
         const data = response.data;
-        console.log(data);
+        
         return data;
     } catch (error) {
         console.error("Erro ao buscar vídeos do canal:", error);

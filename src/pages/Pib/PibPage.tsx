@@ -1,127 +1,141 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { theme } from '../../styles/theme';
-import { Link } from 'react-router-dom';
+import PastorClaudinei from "../../assets/images-pastores/Pastor-Claudinei.jpg";
+import PastorSidonio from "../../assets/images-pastores/Pr-Sidonio.jpg";
+import PastorEdmilson from "../../assets/images-pastores/Pastor-Claudinei2.jpg";
+import PastorNeves from "../../assets/images-pastores/Pastor-Euripides.jpg";
+import { ImagePerfil, ImagePerfilContainer, ImagePlaceholder, PageContainer, Paragraph, Section, SectionTitle, Title } from "./PibPage-style";
 
-const fadeIn = keyframes`
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-`;
 
-const PageContainer = styled.div`
-  padding: ${theme.spacings.large} ${theme.spacings.medium};
-  animation: ${fadeIn} 0.8s ease-out;
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: ${theme.colors.white};
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  margin-top: ${theme.spacings.large};
-  margin-bottom: ${theme.spacings.large};
-`;
 
-const Title = styled.h1`
-  font-size: ${theme.fontSizes.xxlarge};
-  color: ${theme.colors.primary};
-  font-family: ${theme.fonts.heading};
-  margin-bottom: ${theme.spacings.medium};
-  text-align: center;
-`;
-
-const Section = styled.section`
-  margin-bottom: ${theme.spacings.xlarge};
-  animation: ${fadeIn} 0.5s ease-out forwards;
-  opacity: 0;
-  
-  &:nth-child(1) { animation-delay: 0.2s; }
-  &:nth-child(2) { animation-delay: 0.4s; }
-  &:nth-child(3) { animation-delay: 0.6s; }
-  &:nth-child(4) { animation-delay: 0.8s; }
-`;
-
-const SectionTitle = styled.h2`
-  font-size: ${theme.fontSizes.xlarge};
-  color: ${theme.colors.primary};
-  font-family: ${theme.fonts.heading};
-  margin-bottom: ${theme.spacings.medium};
-  padding-bottom: ${theme.spacings.xsmall};
-  border-bottom: 2px solid ${theme.colors.secondary};
-  display: inline-block;
-`;
-
-const Paragraph = styled.p`
-  font-size: ${theme.fontSizes.medium};
-  color: ${theme.colors.text};
-  line-height: 1.8;
-  margin-bottom: ${theme.spacings.small};
-`;
-
-const ImagePlaceholder = styled.div`
-  width: 100%;
-  height: 300px;
-  background-color: ${theme.colors.lightGray};
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: ${theme.colors.mediumGray};
-  font-size: ${theme.fontSizes.large};
-  margin: ${theme.spacings.medium} 0;
-`;
-
-const PibPage: React.FC = () => {
+const PibPage = () => {
+  const imagesPastoresPib = [
+    { src: PastorClaudinei, alt: "Pastor Claudinei de Araujo" },
+    { src: PastorNeves, alt: "Pastor Euripides Neves" },
+    { src: PastorSidonio, alt: "Pastor Sidónio" },
+    { src: PastorEdmilson, alt: "Pastor Edmilson" },
+  ];
   return (
     <PageContainer>
-      <Title>Sobre a PIB [Nome da Cidade]</Title>
+      <Title>Sobre a PIB </Title>
 
       <Section>
         <SectionTitle>Nossa História</SectionTitle>
-        <ImagePlaceholder>Imagem Genérica (Nossa História)</ImagePlaceholder>
+        <ImagePlaceholder>
+          <iframe
+            width="600"
+            height="315"
+            src="https://www.youtube.com/embed/62PqXGkkBnI?si=AMWyv-9mPrbZYIil&amp;start=74"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </ImagePlaceholder>
         <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          A Primeira Igreja Batista em Franca-SP tem suas raízes na rica
+          história do movimento batista no Brasil, que se iniciou com a chegada
+          dos primeiros missionários e a organização das primeiras igrejas no
+          final do século XIX. A Convenção Batista Brasileira, fundada em 1907,
+          é o órgão máximo que congrega as igrejas batistas no país, promovendo
+          a cooperação em missões, educação teológica e publicações. Nossa
+          igreja, como parte dessa história, busca honrar o legado de fé e
+          serviço daqueles que nos precederam, mantendo os princípios batistas
+          de autonomia da igreja local, sacerdócio individual do crente e a
+          suficiência das Escrituras Sagradas.
         </Paragraph>
         <Paragraph>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-          Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. 
-          Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
+          A Primeira Igreja Batista em Franca - SP nasceu do desejo de proclamar
+          o Evangelho de Jesus Cristo de forma fiel às Escrituras e relevante
+          para a comunidade. Desde a sua fundação, nosso propósito tem sido
+          anunciar a salvação pela graça, mediante a fé, e servir como um farol
+          de esperança e amor cristão. Ao longo dos anos, a PIB tem sido um
+          lugar de comunhão, crescimento espiritual e serviço. Vidas têm sido
+          transformadas pelo poder do Evangelho, famílias têm sido restauradas e
+          a Palavra de Deus tem sido pregada com clareza e compromisso. Nossa
+          trajetória é marcada pela fidelidade ao Senhor, pela cooperação com a
+          Convenção Batista e pelo envolvimento ativo na evangelização local e
+          mundial, sempre buscando glorificar a Deus em tudo o que fazemos.
         </Paragraph>
       </Section>
 
       <Section>
         <SectionTitle>No Que Cremos</SectionTitle>
         <Paragraph>
-          Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. 
-          Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. 
-          Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
+          Nós cremos na Bíblia como a Palavra de Deus inspirada, infalível e
+          autoritária para a fé e prática. Cremos em um só Deus, eternamente
+          existente em três pessoas: Pai, Filho e Espírito Santo. Cremos na
+          divindade de Jesus Cristo, em seu nascimento virginal, em sua vida sem
+          pecado, em seus milagres, em sua morte vicária e expiatória, em sua
+          ressurreição corporal, em sua ascensão à direita do Pai e em seu
+          retorno pessoal em poder e glória. Cremos na salvação pela graça,
+          mediante a fé em Jesus Cristo. Cremos na autonomia da igreja local e
+          na separação entre Igreja e Estado.
         </Paragraph>
         <Paragraph>
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. 
-          Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. 
-          Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
+          Cremos na importância da igreja local como comunidade de crentes
+          regenerados, autônoma e comprometida com o cumprimento da Grande
+          Comissão: fazer discípulos de todas as nações. Cremos nas ordenanças
+          deixadas por Cristo: o Batismo por imersão e a Ceia do Senhor, como
+          símbolos da nossa fé e comunhão com Ele.
         </Paragraph>
-        <ImagePlaceholder>Imagem Genérica (No Que Cremos)</ImagePlaceholder>
       </Section>
 
       <Section>
         <SectionTitle>Nossa Missão, Visão e Valores</SectionTitle>
         <Paragraph>
-          <strong>Missão:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames. 
+          <strong>Missão:</strong>
+          <br />
+           Proclamar o Evangelho de Jesus Cristo, fazer
+          discípulos e servir à comunidade, glorificando a Deus em todas as
+          coisas.
         </Paragraph>
         <Paragraph>
-          <strong>Visão:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit pellentesque habitant morbi.
+          <strong>Visão:</strong> 
+          <br />
+          Ser uma igreja bíblica, acolhedora e
+          missionária, que impacta a cidade, o Brasil e o mundo com o amor de
+          Cristo, formando discípulos comprometidos com a Palavra e com o
+          serviço no Reino de Deus.
         </Paragraph>
         <Paragraph>
-          <strong>Valores:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          <strong>Valores:</strong> 
+          <br />
+          Fidelidade à Palavra de Deus – Tudo o que
+          fazemos está fundamentado na Bíblia. 
+          <br /> 
+          Adoração Cristocêntrica – Vivemos
+          para glorificar a Cristo em espírito e em verdade.
+          <br />
+           Comunhão Fraterna –
+          Valorizamos o amor, o cuidado e a unidade entre os irmãos.
+          <br />
+          Evangelização e Missões – Cumprimos o chamado de fazer discípulos em
+          nossa cidade e até aos confins da Terra.
+          <br />
+           Serviço ao Próximo – Expressamos nossa fé por meio de atos de amor e compaixão.
         </Paragraph>
       </Section>
 
-      {/* A seção de liderança foi solicitada para ser excluída, então não será adicionada aqui */}
-      
+      <Section>
+        <SectionTitle>Nossa Liderança</SectionTitle>
+        <Paragraph>
+          Conheça nossos líderes e pastores que guiam a PIB.
+        </Paragraph>
+        <ImagePerfilContainer>
+          {imagesPastoresPib.map((pastor, index) => (
+            <ImagePerfil key={index}>
+              <div>
+                <img src={pastor.src} alt={pastor.alt} />
+                <Paragraph>{pastor.alt}</Paragraph>
+              </div>
+            </ImagePerfil>
+          ))}
+        </ImagePerfilContainer>
+      </Section>
+
+     
     </PageContainer>
   );
 };
 
 export default PibPage;
-
