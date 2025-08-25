@@ -1,7 +1,7 @@
 {
   "eventos": [
     {
-      "id": 1,
+      "id": "1",
       "lideranca_responsavel": "Bruno Wener de Sousa",
       "inscricao": "https://www.exemplo.com/inscricao-conferencia-anual",
       "titulo": "Conferência Anual da Fé",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Acampamento de Jovens Conectados",
       "lideranca_responsavel": "Ana Clara Silva",
       "inscricao": "https://www.exemplo.com/inscricao-acampamento-jovens",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "lideranca_responsavel": "Carlos Silva",
       "inscricao": "https://www.exemplo.com/inscricao-cantata-natal",
       "titulo": "Cantata de Natal: Luz do Mundo",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "Seminário para Casais",
       "lideranca_responsavel": "Bruno Wener de Sousa",
       "inscricao": "https://www.exemplo.com/inscricao-seminario-casais",
@@ -189,6 +189,53 @@
       "id": "6",
       "nome": "Comunicação",
       "slug": "comunicacao",
+      "funcoes": [
+        {
+          "id": 1,
+          "nome": "Multimídia",
+          "descricao": "Os voluntários deste time desempenham um papel crucial ao controlar tudo o que será projetado no telão da igreja: mensagens, vídeos, avisos e letras das músicas, assegurando a excelência do culto. Sua habilidade em lidar com tecnologia e disposição para servir nos bastidores são características essenciais para aqueles que desejam integrar essa equipe. Eles trabalham incansavelmente para criar uma atmosfera envolvente e inspiradora durante os cultos, garantindo que as mensagens sejam transmitidas de forma clara e impactante para todos os presentes. Sua dedicação nos bastidores é fundamental para o sucesso e a qualidade das experiências de adoração na igreja."
+        },
+        {
+          "id": 2,
+          "nome": "Som",
+          "descricao": "Essa equipe desempenha um papel fundamental em nossa igreja. Tudo o que emite som, desde instrumentos e microfones até as transmissões, passa pelas mãos habilidosas e atentas desses voluntários. Se você acredita na importância da excelência sonora durante as programações, esperamos você para se juntar a nós. Sua paixão e habilidades podem fazer toda a diferença ao transmitir a mensagem divina de amor, esperança e fé para todos os presentes."
+        },
+        {
+          "id": 3,
+          "nome": "Iluminação",
+          "descricao": "A equipe de iluminação é responsável por criar a atmosfera visual durante os cultos e eventos da igreja. Eles trabalham em estreita colaboração com a equipe de multimídia para garantir que a iluminação complemente as apresentações e ajude a transmitir a mensagem de forma eficaz. Se você tem interesse em tecnologia e design, essa pode ser a equipe perfeita para você!"
+        },
+        {
+          "id": 4,
+          "nome": "T.I",
+          "descricao": "Essa equipe é para a pessoa comprometida com o Reino e com habilidade na área de tecnologia para nos ajudar a desenvolver a infraestrutura tecnológica da PIB. Os voluntários de Tecnologia da Informação (T.I) trabalham nos bastidores para proporcionar aos voluntários, membros, visitantes e funcionários a realização e contemplação dos cultos, encontros mensais e eventos é a oportunidade de fazer a diferença, permitindo que mais pessoas se conectem e se envolvam com nossa igreja, independentemente de onde estejam. Venha fazer parte dessa jornada e ajude-nos a levar a mensagem da fé além das paredes físicas da igreja."
+        },
+        {
+          "id": 5,
+          "nome": "Transmissão",
+          "descricao": "Essa equipe tem a responsabilidade de operar as câmeras, capturando imagens para transmitir online a mesma atmosfera presente durante os encontros presenciais. Esse esforço visa permitir que as pessoas possam cultuar a Deus de forma semelhante, independentemente do local onde se encontram."
+        },
+        {
+          "id": 6,
+          "nome": "Redes Sociais",
+          "descricao": "Esta equipe tem a função de gerenciar as redes sociais da PIB e dos nossos ministérios. Se você tem interesse nessa área e deseja servir à igreja, esta é a sua chance. Acreditamos que por meio das nossas redes sociais podemos informar nossas atividades e apresentar Jesus, alcançando pessoas que estão perto ou longe."
+        },
+        {
+          "id": 7,
+          "nome": "Fotografia e Vídeo",
+          "descricao": "Os voluntários da equipe de fotografia e vídeo vão além de simples imagens; eles capturam a essência e a atmosfera dos cultos, encontros mensais e eventos. As fotos e vídeos não apenas alimentam nossos canais de comunicação, mas também contam a história do amor e da intervenção de Deus em nossas vidas. Se você possui esse talento, estamos ansiosos para recebê-lo!"
+        },
+        {
+          "id": 8,
+          "nome": "Produção de Culto",
+          "descricao": "A equipe de produção de culto trabalha arduamente para fornecer toda a assistência necessária à banda e aos pastores, garantindo que os cultos, encontros mensais e eventos ocorram sem interrupções. Eles se esforçam para criar uma dinâmica de palco que seja rápida, leve, discreta e natural, minimizando assim quaisquer possíveis erros que possam ocorrer durante a programação."
+        },
+        {
+          "id": 9,
+          "nome": "Criação/Arte",
+          "descricao": "A equipe de Criação/Arte desempenha um papel vital na comunicação da PIB, sendo responsável pela elaboração dos avisos e materiais impressos que utilizamos. Se você é uma pessoa criativa e deseja dedicar seu talento a servir a Deus, esta equipe é o lugar ideal para você. Através da criação desses materiais, nós não apenas informamos, mas também comunicamos o Reino de Deus. Afinal, nós servimos a um Deus criativo, e é através da expressão artística que compartilhamos Sua mensagem de amor e esperança com o mundo ao nosso redor. Junte-se a nós nesta jornada criativa e inspire outros com o poder da arte a serviço da Igreja de Cristo."
+        }
+      ],
       "imagem": "https://picsum.photos/seed/comunicacao/600/400",
       "descricaoCurta": "Levando a mensagem do Evangelho e as boas novas da nossa igreja a todos, utilizando as mais diversas ferramentas e plataformas de comunicação.",
       "descricaoCompleta": "O Ministério de Comunicação é responsável por divulgar as atividades da igreja, produzir conteúdos para as redes sociais, gerenciar o site e criar materiais gráficos para eventos e campanhas. Trabalhamos para que a mensagem do Evangelho e as informações sobre nossa igreja alcancem o maior número de pessoas possível, utilizando a tecnologia e a criatividade a serviço do Reino de Deus. Nossa equipe é formada por pessoas com habilidades em design, fotografia, vídeo, redação e gerenciamento de redes sociais.",
@@ -243,23 +290,85 @@
       ]
     },
     {
-      "id": "9",
-      "nome": "Marketing",
-      "slug": "marketing",
-      "imagem": "https://picsum.photos/seed/marketing/600/400",
-      "descricaoCurta": "Nosso ministério de Marketing é responsável por divulgar as atividades da igreja e engajar a comunidade.",
-      "descricaoCompleta": "O Ministério de Marketing tem como objetivo promover as atividades da igreja e alcançar novos membros. Utilizamos diversas estratégias de comunicação, incluindo redes sociais, e-mail marketing e eventos presenciais, para compartilhar a mensagem do evangelho e as oportunidades de crescimento espiritual na nossa comunidade. Trabalhamos em colaboração com outros ministérios para garantir que todos os eventos sejam bem divulgados e que a igreja esteja sempre conectada com os membros e visitantes.",
-      "lideranca": "Carlos e Ana Souza",
-      "contato": "marketing@pib.org.br",
-      "horarioEncontros": "Domingos, 30 minutos antes dos cultos",
-      "fotos": [
-        "https://picsum.photos/seed/marketing1/600/400",
-        "https://picsum.photos/seed/marketing2/600/400",
-        "https://picsum.photos/seed/boasvindas3/600/400"
+      "id": "10",
+      "nome": "Operações",
+      "slug": "operacoes",
+      "funcoes": [
+        {
+          "id": 1,
+          "nome": "Introdução",
+          "descricao": "Esta equipe desempenha um papel crucial ao receber aqueles que chegam à PIB. Não apenas orientam os membros e visitantes até o templo, mas também transmite o amor de Cristo por meio de suas ações. Dessa maneira, as pessoas têm a oportunidade de vivenciar o verdadeiro significado de serem amadas e tocadas por Deus."
+        },
+        {
+          "id": 2,
+          "nome": "Boas-vindas",
+          "descricao": "A equipe de Boas-vindas é a porta de entrada da PIB. Eles são responsáveis por receber os visitantes com um sorriso, fornecer informações sobre a igreja e garantir que todos se sintam acolhidos. Deixamos uma lembrancinha após o culto com cada visitante, também recolhemos os dados para um contato posterior. Se você gosta de interagir com pessoas e deseja fazer parte dessa equipe, inscreva-se!"
+        },
+        {
+          "id": 3,
+          "nome": "Estacionamento e Segurança",
+          "descricao": "O ministério de Estacionamento e Segurança é vital para garantir a ordem e a segurança durante os eventos da PIB. Nossa equipe é responsável por orientar os veículos para as áreas de estacionamento apropriadas e garantir que todos os participantes se sintam seguros e bem-vindos. Se você tem um coração para servir e deseja fazer parte dessa equipe, nós o encorajamos a se inscrever!"
+        },
+        {
+          "id": 4,
+          "nome": "Bazar",
+          "descricao": "Essa equipe tem como missão receber e triar as doações, garantindo sempre a qualidade e um preço justo. Todo o valor arrecadado é revertido diretamente para a PIB. Desempenham um papel crucial ao assegurar que as doações recebidas atendam aos padrões de qualidade esperados e ao mesmo tempo sejam acessíveis para a comunidade. O trabalho dedicado dessa equipe contribui significativamente para a área social da igreja."
+        },
+        {
+          "id": 5,
+          "nome": "Social",
+          "descricao": "Essa área desempenha um papel fundamental na construção de uma comunidade unida e acolhedora. É um espaço onde os membros podem servir, com seus recursos na oferta de itens para a cesta básica, ou com seus talentos para a distribuição e acompanhamento das famílias acolhidas, dessa forma promovendo o amor, a compaixão e a solidariedade. Nesse ambiente, as pessoas encontram apoio espiritual e emocional, formam laços significativos e trabalham juntas para fazer a diferença na vida de seus membros e da comunidade em geral. Além disso, a área social da igreja serve como um lugar de apoio para as pessoas que estão passando por dificuldades. Oferecemos aconselhamento espiritual, apoio emocional e recursos práticos para ajudar aqueles que enfrentam desafios em suas vidas. Dessa forma, a igreja não é apenas um local de adoração, mas também um centro vital de apoio social, onde o amor ao próximo e a compaixão são colocados em prática de maneira tangível."
+        }
       ],
-      "videosYoutube": [
-        "https://www.youtube.com/embed/7clLRGKd1q0?si=sBOg_9rZ4CQYEWDH"
-      ]
+      "imagem": "https://picsum.photos/seed/operacoes/600/400",
+      "descricaoCurta": "Cuidamos das operações e serviços que tornam possível a realização dos cultos e eventos.",
+      "descricaoCompleta": "O Ministério de Operações é responsável pelo bom funcionamento das atividades práticas e de apoio em nossa igreja. Desde o estacionamento até a logística interna, cada função é importante para que nossos cultos e eventos aconteçam com ordem e excelência.",
+      "lideranca": "Equipe de Operações",
+      "contato": "operacoes@pib.org.br",
+      "horarioEncontros": "Domingos, antes e depois dos cultos",
+      "fotos": [
+        "https://picsum.photos/seed/operacoes1/600/400",
+        "https://picsum.photos/seed/operacoes2/600/400"
+      ],
+      "videosYoutube": []
+    },
+    {
+      "id": "11",
+      "nome": "Apoio Geral",
+      "slug": "apoio-geral",
+      "funcoes": [
+        {
+          "id": 1,
+          "nome": "Manutenção",
+          "descricao": "Essa equipe é encarregada de realizar a manutenção predial na PIB, contribuindo para a melhoria dos espaços para que todos possam desfrutar. Se você se sente conectado com essa área, esta equipe é a escolha certa para você."
+        },
+        {
+          "id": 2,
+          "nome": "Limpeza",
+          "descricao": "Essa Equipe é responsável por realizar a limpeza da PIB, permitindo que você sirva à Igreja ao cuidar dos ambientes que temos. Ao zelar por esses espaços, você contribui para proporcionar a todos uma experiência agradável e acolhedora."
+        },
+        {
+          "id": 3,
+          "nome": "Decoração",
+          "descricao": "A equipe de Decoração é responsável por criar ambientes acolhedores e inspiradores na PIB. Se você tem um olho para design e deseja usar seu talento para embelezar nossos espaços, esta equipe é para você. Juntos, podemos transformar a PIB em um lugar ainda mais especial para todos."
+        },
+        {
+          "id": 4,
+          "nome": "Copa",
+          "descricao": "Equipe que prepara as mesas e esteja disposta a lavar, guardar e zelar pelos utensílios da PIB. A equipe da copa desempenha um papel fundamental para o desenvolvimento das atividades da cantina. Auxilia em várias tarefas essenciais como, limpeza, organização, descarte de resíduos, auxílio na manipulação e higienização dos alimentos, garantindo que cada refeição seja servida com excelência. Se você gosta dessa área, aqui é o lugar certo."
+        }
+      ],
+      "imagem": "https://picsum.photos/seed/apoiogeral/600/400",
+      "descricaoCurta": "Oferecemos suporte essencial em várias áreas para que tudo funcione com excelência.",
+      "descricaoCompleta": "O Ministério de Apoio Geral cuida das necessidades estruturais e de suporte da igreja, garantindo que cada detalhe, desde a limpeza até a manutenção, esteja em ordem para proporcionar um ambiente seguro, organizado e acolhedor.",
+      "lideranca": "Equipe de Apoio",
+      "contato": "apoio@pib.org.br",
+      "horarioEncontros": "Conforme necessidade dos eventos",
+      "fotos": [
+        "https://picsum.photos/seed/apoiogeral1/600/400",
+        "https://picsum.photos/seed/apoiogeral2/600/400"
+      ],
+      "videosYoutube": []
     }
   ],
   "cultos": [
@@ -269,19 +378,19 @@
       "horarios": [
         {
           "hora": "09:00",
-          "descricao": "Escola Bíblica Dominical"
+          "descricao": "Culto de Celebração Matutino l"
         },
         {
-          "hora": "10:30",
-          "descricao": "Culto de Celebração Matutino"
+          "hora": "10:20",
+          "descricao": "Escola Bíblica Dominica"
         },
         {
-          "hora": "18:00",
+          "hora": "19:00",
           "descricao": "Culto de Celebração Vespertino"
         }
       ],
       "onlineLink": "https://youtube.com/suaigrejaaovivo",
-      "local": "Templo Principal - Rua Exemplo, 123 - Bairro, Cidade - UF"
+      "local": "Templo Principal - Rua Jose de Alencar, 2601 - Estação, Franca-SP"
     },
     {
       "id": "2",
@@ -292,18 +401,18 @@
           "descricao": "Culto de Oração e Estudo Bíblico"
         }
       ],
-      "local": "Templo Principal - Rua Exemplo, 123 - Bairro, Cidade - UF"
+      "local": "Templo Principal - Rua Jose de Alencar, 2601 - Estação, Franca-SP"
     },
     {
       "id": "3",
-      "dia": "Sexta-feira",
+      "dia": "Sexta-feira ou sábado",
       "horarios": [
         {
           "hora": "20:00",
-          "descricao": "Culto de Jovens"
+          "descricao": "Pequeno Grupos"
         }
       ],
-      "local": "Salão Social - Rua Exemplo, 123 - Bairro, Cidade - UF"
+      "local": "Procure um PG para participar - Informações com os líderes"
     }
   ],
   "muralPiedade": [
@@ -312,7 +421,7 @@
       "autor": "Ana Silva",
       "data": "14 de Maio, 2025",
       "texto": "Peço orações pela saúde da minha mãe, que passará por uma cirurgia importante na próxima semana. Que Deus guie as mãos dos médicos e traga a cura.",
-      "interacoes": 23,
+      "interacoes": 46,
       "comentarios": [
         {
           "id": 1,
@@ -333,7 +442,7 @@
       "autor": "Carlos Pereira",
       "data": "13 de Maio, 2025",
       "texto": "Gostaria de pedir oração por um novo desafio profissional que estou enfrentando. Que o Senhor me dê sabedoria e direção em todas as decisões.",
-      "interacoes": 22,
+      "interacoes": 23,
       "comentarios": [
         {
           "id": 3,
@@ -380,114 +489,89 @@
       ]
     },
     {
-      "id": "fc41",
+      "id": "c061",
       "autor": "Bruno ",
-      "texto": "Preciso de ajuda",
-      "data": "19 de maio de 2025",
-      "interacoes": 0,
+      "texto": "Doença ",
+      "data": "25 de agosto de 2025",
+      "interacoes": 18,
       "comentarios": []
     },
     {
-      "id": "6067",
-      "autor": "xvcgnhjz",
-      "texto": "sx\\fdhn",
-      "data": "22 de maio de 2025",
-      "interacoes": 1,
-      "comentarios": []
-    },
-    {
-      "id": "7477",
+      "id": "07ef",
       "autor": "Bruno ",
-      "texto": "oii",
-      "data": "14 de agosto de 2025",
-      "interacoes": 8,
-      "comentarios": []
-    },
-    {
-      "id": "0658",
-      "autor": "Bruno ",
-      "texto": "bruno \n",
-      "data": "15 de agosto de 2025",
-      "interacoes": 5,
-      "comentarios": []
-    },
-    {
-      "id": "f110",
-      "autor": "Bruno ",
-      "texto": "doente ",
-      "data": "15 de agosto de 2025",
-      "interacoes": 0,
-      "comentarios": []
+      "texto": "doer de dente",
+      "data": "25 de agosto de 2025",
+      "interacoes": 4,
+      "comentarios": [
+        {
+          "id": 1,
+          "autor": "João Paulo",
+          "data": "14 de Maio, 2025",
+          "texto": "Estamos orando por sua mãe, Ana. Deus está no controle!"
+        }
+      ]
     }
   ],
   "usuarios": [
     {
-      "id": "1",
-      "nome": "Administrador",
-      "email": "admin@pib.org.br",
-      "senha": "admin123",
-      "perfil": "admin",
-      "dataCadastro": "2025-01-01"
-    },
-    {
-      "id": "2",
-      "nome": "João Silva",
-      "email": "joao@exemplo.com",
-      "senha": "senha123",
-      "perfil": "membro",
-      "dataCadastro": "2025-03-15",
-      "telefone": "(11) 98765-4321",
-      "dataNascimento": "1990-05-20"
-    },
-    {
-      "id": "4ef5",
-      "nome": "Bruno Wener de Sousa",
+      "id": "3048",
+      "nome": "BRUNO WENER DE SOUSA",
       "email": "bruno.wener.sousa82@gmail.com",
-      "senha": "gaby",
-      "perfil": "membro",
-      "dataCadastro": "2025-05-17T19:49:33.452Z",
+      "senha": "$2b$10$ykpCZH1buLAARXcbRlo0F./OVJdAPrpC9GWIERyRfKfEFcExOUu6e",
+      "perfil": "Membro",
+      "userAdm": false,
+      "dataCadastro": "2025-08-23T00:14:14.308Z",
       "telefone": "16994227245",
       "dataNascimento": "1997-08-19"
     },
     {
-      "id": "e0c9",
-      "nome": "Bruno Wener de Sousa",
-      "email": "teste@teste",
-      "senha": "olá",
-      "perfil": "membro",
-      "dataCadastro": "2025-05-17T19:51:03.332Z",
+      "id": "afba",
+      "nome": "BRUNO WENER DE SOUSA",
+      "email": "examplo@gmail.com",
+      "senha": "123",
+      "perfil": "Membro",
+      "userAdm": false,
+      "dataCadastro": "2025-08-23T00:22:03.084Z",
       "telefone": "16994227245",
-      "dataNascimento": ""
-    },
-    {
-      "id": "1cf0",
-      "nome": "Bruno Wener de Sousa",
-      "email": "email@email.com",
-      "senha": "aaa",
-      "perfil": "membro",
-      "dataCadastro": "2025-05-20T01:07:06.190Z",
-      "telefone": "16994227245",
-      "dataNascimento": "2025-05-13"
+      "dataNascimento": "2025-08-11"
     }
   ],
   "inscricoes": [
     {
-      "id": "1",
-      "nome": "Maria Oliveira",
-      "email": "maria@exemplo.com",
-      "telefone": "(11) 91234-5678",
-      "ministerio": "Louvor",
-      "mensagem": "Gostaria de participar do ministério de louvor como tecladista. Tenho experiência de 5 anos tocando em outra igreja.",
-      "data": "2025-04-10"
+      "id": "aad3",
+      "nome": "BRUNO WENER DE SOUSA",
+      "email": "wegaerhserh@sfghe.com",
+      "telefone": "5469584654",
+      "ministerio": "Operações",
+      "mensagem": "wrtjhertjretj",
+      "funcao": [
+        17
+      ],
+      "data": "2025-08-21T21:23:12.657Z"
     },
     {
-      "id": "e73a",
+      "id": "bbaf",
       "nome": "BRUNO WENER DE SOUSA",
-      "email": "bruno.wener.sousa82@gmail.com",
+      "email": "examplo@gmail.com",
+      "telefone": "41 99432-8594",
+      "ministerio": "Apoio Geral",
+      "mensagem": "sdfbdsa",
+      "funcoes": [
+        2
+      ],
+      "data": "2025-08-21T22:12:07.950Z"
+    },
+    {
+      "id": "44ce",
+      "nome": "BRUNO WENER DE SOUSA",
+      "email": "admin@email.com",
       "telefone": "16994227245",
-      "ministerio": "Boas-vindas",
-      "mensagem": "Me comunico bem",
-      "data": "2025-08-20T20:45:32.088Z"
+      "ministerio": "Apoio Geral",
+      "mensagem": "ewwerhy",
+      "funcoes": [
+        "Manutenção"
+      ],
+      "data": "2025-08-21T22:16:15.344Z"
     }
   ],
   "videos": [

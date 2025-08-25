@@ -2,6 +2,7 @@ export interface Ministerio {
  id: number;
   nome: string;
   slug: string;
+  funcoes?: { id: number; nome: string, descricao: string }[];
   imagem: string;
   descricaoCurta: string;
   descricaoCompleta: string;

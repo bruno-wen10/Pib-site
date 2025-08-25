@@ -5,10 +5,10 @@ export { default as MinisterioPage } from './Ministerios/MinisterioPage'; // Pá
 export { default as EventosPageList } from './Eventos/EventosPage-List';
 export { default as EventoPage } from './Eventos/EventoPage';
 
-export { default as InscricoesPage } from './Inscricoes/InscricoesPage';
+export { default as InscricoesPage } from './SejaVoluntario/Seja-Voluntario';
 export { default as CultosPage } from './Cultos/CultosPage';
-export { default as MuralPiedadePage } from './MuralPiedade/MuralPiedadePage';
-export { default as NovoPedidoMuralPage } from './MuralPiedade/NovoPedidoMuralPage';
+export { default as MuralPiedadePage } from './MuralOracao/MuralPiedadePage';
+export { default as NovoPedidoMuralPage } from './MuralOracao/NovoPedidoMuralPage';
 export { default as ContribuaPage } from './Contribua/ContribuaPage';
 export { default as LoginPage } from './Auth/LoginPage';
 export { default as RegisterPage } from './Auth/RegisterPage';

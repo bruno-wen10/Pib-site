@@ -77,7 +77,7 @@ const Header: React.FC = () => {
           <StyledNavLink to="/eventos" onClick={closeMobileMenu}>Eventos</StyledNavLink>
           <StyledNavLink to="/inscricoes" onClick={closeMobileMenu}>Inscrições</StyledNavLink>
           <StyledNavLink to="/cultos" onClick={closeMobileMenu}>Cultos</StyledNavLink>
-          <StyledNavLink to="/mural-piedade" onClick={closeMobileMenu}>Mural da Piedade</StyledNavLink>
+          <StyledNavLink to="/mural-piedade" onClick={closeMobileMenu}>Mural Oração</StyledNavLink>
           <StyledNavLink to="/contribua" onClick={closeMobileMenu}>Contribuir</StyledNavLink>
           {/* {isLoggedIn && (
           )} */}
@@ -104,4 +104,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-

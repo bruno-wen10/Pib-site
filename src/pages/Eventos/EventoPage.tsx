@@ -8,7 +8,7 @@ import { useEventos } from "@/hooks/context/use-Eventos"; // Importando o hook d
 
 
 const EventoPage = ()=>{
-    const { evento, isLoading, error } = useEventos(); 
+    const { evento } = useEventos(); 
     return (
         
            <PageContainer>
