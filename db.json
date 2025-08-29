@@ -95,6 +95,7 @@
       "nome": "Boas-vindas",
       "slug": "boas-vindas",
       "imagem": "https://picsum.photos/seed/boasvindas/600/400",
+      "descricao_atividades": "Receber e acolher visitantes e membros, proporcionando uma experiência calorosa e amigável desde o primeiro contato com a igreja.",
       "descricaoCurta": "Nosso ministério de Boas-vindas está pronto para receber você e sua família com alegria e amor, tornando sua experiência em nossa igreja a mais acolhedora possível.",
       "descricaoCompleta": "O Ministério de Boas-vindas é a porta de entrada da nossa igreja. Somos responsáveis por receber os visitantes, membros e amigos com um sorriso no rosto e o coração aberto. Nosso objetivo é fazer com que todos se sintam bem-vindos e amados desde o primeiro momento em que entram em nossa igreja. Trabalhamos para criar um ambiente acolhedor e caloroso, onde as pessoas possam se sentir à vontade para adorar a Deus e crescer na fé.",
       "lideranca": "Bruno Wener e Gabrielle Vicelli",
@@ -114,6 +115,7 @@
       "nome": "Kids",
       "slug": "kids",
       "imagem": "https://picsum.photos/seed/kids/600/400",
+      "descricao_atividades": "Um espaço seguro e divertido onde as crianças aprendem sobre o amor de Deus através de atividades lúdicas, músicas e histórias bíblicas.",
       "descricaoCurta": "Um espaço seguro e divertido onde as crianças aprendem sobre o amor de Deus através de atividades lúdicas, músicas e histórias bíblicas.",
       "descricaoCompleta": "O Ministério Kids é dedicado a ensinar as crianças sobre o amor de Deus de maneira divertida e significativa. Através de histórias bíblicas, músicas, brincadeiras e atividades criativas, ajudamos as crianças a desenvolverem um relacionamento pessoal com Jesus desde cedo. Nosso objetivo é plantar sementes de fé que crescerão ao longo da vida delas. Contamos com uma equipe treinada e apaixonada por crianças, em um ambiente seguro e acolhedor.",
       "lideranca": "Ana Carolina Moreira, Isaque e Shaiene",
@@ -133,6 +135,7 @@
       "nome": "Estação Jovem",
       "slug": "estacao-jovem",
       "imagem": "https://picsum.photos/seed/jovens/600/400",
+      "descricao_atividades": "Conectando jovens com Deus e uns com os outros, através de encontros dinâmicos, estudos bíblicos relevantes e momentos de comunhão e serviço.",
       "descricaoCurta": "Conectando jovens com Deus e uns com os outros, através de encontros dinâmicos, estudos bíblicos relevantes e momentos de comunhão e serviço.",
       "descricaoCompleta": "O Ministério Estação Jovem é um espaço onde os jovens podem crescer espiritualmente, fazer amizades verdadeiras e descobrir seus dons e talentos para servir a Deus. Realizamos encontros semanais com louvor, mensagens relevantes para a juventude atual e momentos de comunhão. Também promovemos retiros, ações sociais e atividades recreativas. Nosso objetivo é formar uma geração de jovens comprometidos com Cristo e preparados para impactar o mundo.",
       "lideranca": "Lucas Mendes",
@@ -152,6 +155,7 @@
       "nome": "Teens de Primeira",
       "slug": "teens-de-primeira",
       "imagem": "https://picsum.photos/seed/teens/600/400",
+      "descricao_atividades": "Acompanhando os adolescentes em sua jornada de fé, com desafios, amizades e aprendizado da Palavra para uma vida com propósito.",
       "descricaoCurta": "Acompanhando os adolescentes em sua jornada de fé, com desafios, amizades e aprendizado da Palavra para uma vida com propósito.",
       "descricaoCompleta": "O Ministério Teens de Primeira foi criado especialmente para adolescentes de 12 a 17 anos. Entendemos que esta é uma fase de muitas descobertas e desafios, por isso oferecemos um ambiente onde eles podem encontrar respostas para suas dúvidas, fazer amizades saudáveis e crescer na fé. Através de estudos bíblicos dinâmicos, jogos, acampamentos e momentos de louvor, ajudamos os adolescentes a construírem uma base sólida em Cristo para enfrentarem os desafios da vida.",
       "lideranca": "Gabriel e Juliana Costa",
@@ -171,6 +175,7 @@
       "nome": "Mulheres MCM",
       "slug": "mulheres-mcm",
       "imagem": "https://picsum.photos/seed/mulheres/600/400",
+      "descricao_atividades": "Mulheres Conectadas em Missão: fortalecendo laços, crescendo espiritualmente e servindo juntas na obra do Senhor, inspirando umas às outras.",
       "descricaoCurta": "Mulheres Conectadas em Missão: fortalecendo laços, crescendo espiritualmente e servindo juntas na obra do Senhor, inspirando umas às outras.",
       "descricaoCompleta": "O Ministério de Mulheres MCM (Mulheres Conectadas em Missão) é um espaço onde as mulheres da nossa igreja e comunidade podem encontrar apoio, amizade e crescimento espiritual. Realizamos encontros mensais com estudos bíblicos, palestras sobre temas relevantes para a mulher cristã, momentos de oração e comunhão. Também organizamos retiros, cafés da manhã especiais e projetos missionários. Nosso objetivo é fortalecer cada mulher em sua caminhada com Deus e em seus diversos papéis na família, igreja e sociedade.",
       "lideranca": "Débora Santos",
@@ -237,6 +242,7 @@
         }
       ],
       "imagem": "https://picsum.photos/seed/comunicacao/600/400",
+      "descricao_atividades": "Levando a mensagem do Evangelho e as boas novas da nossa igreja a todos, utilizando as mais diversas ferramentas e plataformas de comunicação.",
       "descricaoCurta": "Levando a mensagem do Evangelho e as boas novas da nossa igreja a todos, utilizando as mais diversas ferramentas e plataformas de comunicação.",
       "descricaoCompleta": "O Ministério de Comunicação é responsável por divulgar as atividades da igreja, produzir conteúdos para as redes sociais, gerenciar o site e criar materiais gráficos para eventos e campanhas. Trabalhamos para que a mensagem do Evangelho e as informações sobre nossa igreja alcancem o maior número de pessoas possível, utilizando a tecnologia e a criatividade a serviço do Reino de Deus. Nossa equipe é formada por pessoas com habilidades em design, fotografia, vídeo, redação e gerenciamento de redes sociais.",
       "lideranca": "Felipe Rodrigues",
@@ -457,7 +463,7 @@
       "autor": "Família Santos",
       "data": "12 de Maio, 2025",
       "texto": "Oramos por paz e conforto para nossa família neste momento de luto. Agradecemos o apoio e as orações de todos.",
-      "interacoes": 30,
+      "interacoes": 31,
       "comentarios": [
         {
           "id": 4,
@@ -478,7 +484,7 @@
       "autor": "Juliana Costa",
       "data": "11 de Maio, 2025",
       "texto": "Peço oração pelos meus estudos e pelas provas finais da faculdade. Que Deus me dê concentração e clareza para alcançar bons resultados.",
-      "interacoes": 19,
+      "interacoes": 21,
       "comentarios": [
         {
           "id": 6,
@@ -493,7 +499,7 @@
       "autor": "Bruno ",
       "texto": "Doença ",
       "data": "25 de agosto de 2025",
-      "interacoes": 18,
+      "interacoes": 19,
       "comentarios": []
     },
     {
