@@ -54,6 +54,14 @@ const HomePage= () => {
   const { live, videosRecentes } = useYoutube();
 
   useEffect(() => {
+    alert("⚠️ Atenção!Este site ainda não está finalizado e precisa de alguns ajustes. " +
+      "Ele foi postado para que os irmãos da igreja possam acompanhar o nosso avanço. " +
+      "O projeto já está quase concluído, mas o banco de dados ainda está sendo criado. " +
+      "Por isso, todas as informações exibidas aqui podem conter erros ou estarem incompletas. " +
+      "Agradecemos a compreensão de todos.");
+  }, []);
+
+  useEffect(() => {
     const fetchData = async () => {
       try {
         console.log();
@@ -113,6 +121,7 @@ const HomePage= () => {
   //const liveVideoTitle = live?.items?.[0]?.snippet?.title;
   return (
     <>
+    
       {heroEvents.length > 0 && (
         <HeroSection
           style={{ backgroundImage: `url(${heroEvents[currentSlide].imagem})` }}

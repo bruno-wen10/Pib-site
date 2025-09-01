@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import styled, { keyframes } from 'styled-components';
-import { theme } from '../../styles/theme';
-import { Link } from 'react-router-dom';
 import axios from 'axios'; // Importar axios
 import { CardContent, CardImage, CardImageContainer, ErrorText, EventCard, EventDate, EventDescription, EventGrid, EventLocation, EventTitle, LoadingText, PageContainer, SaibaMaisButton, Title } from './EventosPage-Styled';
 

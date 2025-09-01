@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import {
   FaPaperPlane,
@@ -25,7 +25,7 @@ import {
   Textarea,
   Title,
 } from "./Seja-Voluntario-Styled";
-import { MinisterioOption, FormData } from "@/types/seja-volintario";
+import { FormData } from "@/types/seja-volintario";
 import { AreasVoluntarios } from "@/components/ui/areas-volutarios";
 import { useMinisterios } from "@/hooks/context/use-Ministerios-List";
 

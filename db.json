@@ -427,7 +427,7 @@
       "autor": "Ana Silva",
       "data": "14 de Maio, 2025",
       "texto": "Peço orações pela saúde da minha mãe, que passará por uma cirurgia importante na próxima semana. Que Deus guie as mãos dos médicos e traga a cura.",
-      "interacoes": 46,
+      "interacoes": 48,
       "comentarios": [
         {
           "id": 1,
@@ -507,7 +507,7 @@
       "autor": "Bruno ",
       "texto": "doer de dente",
       "data": "25 de agosto de 2025",
-      "interacoes": 4,
+      "interacoes": 5,
       "comentarios": [
         {
           "id": 1,
@@ -516,6 +516,14 @@
           "texto": "Estamos orando por sua mãe, Ana. Deus está no controle!"
         }
       ]
+    },
+    {
+      "id": "2e1e",
+      "autor": "Bruno ",
+      "texto": "Dor ",
+      "data": "01 de setembro de 2025",
+      "interacoes": 2,
+      "comentarios": []
     }
   ],
   "usuarios": [

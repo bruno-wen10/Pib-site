@@ -99,7 +99,8 @@ export const muralPiedadeService = {
         comentarios: [...pedido.comentarios, novoComentario]
       };
 
-      const response = await api.put(`/muralPiedade/${pedidoId}`, pedidoAtualizado);
+      // const response = await api.put(`/muralPiedade/${pedidoId}`, pedidoAtualizado);
+      await api.put(`/muralPiedade/${pedidoId}`, pedidoAtualizado);
       return novoComentario;
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Falha ao adicionar comentário';

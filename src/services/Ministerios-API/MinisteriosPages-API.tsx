@@ -1,6 +1,5 @@
 import { Ministerio } from "@/types/ministerios";
 import axios from "axios";
-import { useParams } from "react-router-dom";
 
 
 
