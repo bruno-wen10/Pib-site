@@ -499,7 +499,7 @@
       "autor": "Bruno ",
       "texto": "Doença ",
       "data": "25 de agosto de 2025",
-      "interacoes": 19,
+      "interacoes": 20,
       "comentarios": []
     },
     {
@@ -507,7 +507,7 @@
       "autor": "Bruno ",
       "texto": "doer de dente",
       "data": "25 de agosto de 2025",
-      "interacoes": 5,
+      "interacoes": 6,
       "comentarios": [
         {
           "id": 1,
@@ -523,6 +523,22 @@
       "texto": "Dor ",
       "data": "01 de setembro de 2025",
       "interacoes": 2,
+      "comentarios": []
+    },
+    {
+      "id": "c6e0",
+      "autor": "Bruno ",
+      "texto": "dor de nariz\n",
+      "data": "01 de setembro de 2025",
+      "interacoes": 1,
+      "comentarios": []
+    },
+    {
+      "id": "4db9",
+      "autor": "Bruno ",
+      "texto": "doente \n",
+      "data": "02 de setembro de 2025",
+      "interacoes": 0,
       "comentarios": []
     }
   ],
