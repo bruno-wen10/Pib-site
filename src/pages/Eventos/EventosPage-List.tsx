@@ -1,19 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'; // Importar axios
+import axios from 'axios';
 import { CardContent, CardImage, CardImageContainer, ErrorText, EventCard, EventDate, EventDescription, EventGrid, EventLocation, EventTitle, LoadingText, PageContainer, SaibaMaisButton, Title } from './EventosPage-Styled';
-
-// Interface para tipagem dos dados do evento
-interface Evento {
-  id: number;
-  titulo: string;
-  data: string;
-  local: string;
-  descricao: string;
-  imagem: string;
-  linkDetalhes?: string; // Opcional, se houver página de detalhes
-}
-
-
+import { Evento } from '@/types/events';
 
 const EventosPageList: React.FC = () => {
   const [eventos, setEventos] = useState<Evento[]>([]);
@@ -23,7 +11,7 @@ const EventosPageList: React.FC = () => {
   useEffect(() => {
     const fetchEventos = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/eventos');
+        const response = await axios.get('http://localhost:3000/eventos');
         setEventos(response.data);
       } catch (err) {
         setError('Falha ao carregar os eventos. Tente novamente mais tarde.');
@@ -53,15 +41,14 @@ const EventosPageList: React.FC = () => {
         {eventos.map((evento, index) => (
           <EventCard key={evento.id} style={{ '--card-index': index } as React.CSSProperties}>
             <CardImageContainer>
-              <CardImage src={evento.imagem} alt={`Imagem do evento ${evento.titulo}`} />
+              <CardImage src={evento.imagemEvento} alt={`Imagem do evento ${evento.nome_evento}`} />
             </CardImageContainer>
             <CardContent>
-              <EventDate>{evento.data}</EventDate>
-              <EventTitle>{evento.titulo}</EventTitle>
+              <EventDate>{evento.dataInicio_evento}</EventDate>
+              <EventTitle>{evento.nome_evento}</EventTitle>
               <EventDescription>{evento.descricao}</EventDescription>
               <EventLocation>Local: {evento.local}</EventLocation>
-              {/* O link de detalhes pode ser dinâmico ou uma rota padrão */}
-              <SaibaMaisButton to={ `/eventos/${evento.id}`}>Mais Informações</SaibaMaisButton>
+              <SaibaMaisButton to={`/eventos/${evento.id}`} onClick={() => console.log(`Navegando para o evento ${evento.id}`)}>Mais Informações</SaibaMaisButton>
             </CardContent>
           </EventCard>
         ))}
@@ -71,4 +58,5 @@ const EventosPageList: React.FC = () => {
 };
 
 export default EventosPageList;
+
 

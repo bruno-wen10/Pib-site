@@ -5,13 +5,13 @@ export { default as MinisterioPage } from './Ministerios/MinisterioPage'; // Pá
 export { default as EventosPageList } from './Eventos/EventosPage-List';
 export { default as EventoPage } from './Eventos/EventoPage';
 
-export { default as InscricoesPage } from './SejaVoluntario/Seja-Voluntario';
+//export { default as InscricoesPage } from './SejaVoluntario/Seja-Voluntario';
 export { default as CultosPage } from './Cultos/CultosPage';
 export { default as MuralPiedadePage } from './MuralOracao/MuralPiedadePage';
 export { default as NovoPedidoMuralPage } from './MuralOracao/NovoPedidoMuralPage';
 export { default as ContribuaPage } from './Contribua/ContribuaPage';
-export { default as LoginPage } from './Auth/LoginPage';
-export { default as RegisterPage } from './Auth/RegisterPage';
+// export { default as LoginPage } from './Auth/LoginPage';
+// export { default as RegisterPage } from './Auth/RegisterPage';
 export { default as NotFoundPage } from './NotFound/NotFoundPage'; // Placeholder, a ser implementado
 export { default as PoliticaDePrivacidadePage } from './PoliticaDePrivacidade/PoliticaDePrivacidadePage';
 export { default as TermosDeUsoPage } from './TermosDeUso/TermosDeUsoPage'; // Adicionando Termos de Uso

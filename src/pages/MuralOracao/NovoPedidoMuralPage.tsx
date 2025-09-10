@@ -53,13 +53,13 @@ const NovoPedidoMuralPage: React.FC = () => {
       <Title>Novo Pedido de Oração</Title>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
-          <Label htmlFor="autor">Seu Nome (ou "Anônimo")</Label>
+          <Label htmlFor="autor">Seu Nome </Label>
           <Input
             type="text"
             id="autor"
             value={autor}
             onChange={(e) => setAutor(e.target.value)}
-            placeholder="Ex: João Silva ou Anônimo"
+            placeholder="Ex: João Silva"
             required
           />
         </FormGroup>

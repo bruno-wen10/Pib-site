@@ -74,7 +74,10 @@ export const ImagePlaceholder = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+ 
 `;
+
 
 export const ImagePerfilContainer = styled.div`
   display: flex;
@@ -90,4 +93,9 @@ export const ImagePerfil = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease; 
+
+  &:hover {
+    transform: scale(1.05); 
+  }
 `;

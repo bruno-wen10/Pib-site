@@ -499,7 +499,7 @@
       "autor": "Bruno ",
       "texto": "Doença ",
       "data": "25 de agosto de 2025",
-      "interacoes": 20,
+      "interacoes": 21,
       "comentarios": []
     },
     {
@@ -507,7 +507,7 @@
       "autor": "Bruno ",
       "texto": "doer de dente",
       "data": "25 de agosto de 2025",
-      "interacoes": 6,
+      "interacoes": 8,
       "comentarios": [
         {
           "id": 1,
@@ -538,6 +538,22 @@
       "autor": "Bruno ",
       "texto": "doente \n",
       "data": "02 de setembro de 2025",
+      "interacoes": 2,
+      "comentarios": []
+    },
+    {
+      "id": "bf2c",
+      "autor": "victor ",
+      "texto": "dor ",
+      "data": "04 de setembro de 2025",
+      "interacoes": 4,
+      "comentarios": []
+    },
+    {
+      "id": "ba0d",
+      "autor": "dtuhsz",
+      "texto": "gtjs",
+      "data": "06 de setembro de 2025",
       "interacoes": 0,
       "comentarios": []
     }
@@ -602,6 +618,19 @@
         "Manutenção"
       ],
       "data": "2025-08-21T22:16:15.344Z"
+    },
+    {
+      "id": "99b5",
+      "nome": "BRUNO WENER DE SOUSA",
+      "email": "bruno.wener.git@gmail.com",
+      "telefone": "5469584654",
+      "ministerio": "Comunicação",
+      "mensagem": "rhgswerthdgrdfgh",
+      "funcoes": [
+        "Multimídia",
+        "Som"
+      ],
+      "data": "2025-09-04T22:27:32.086Z"
     }
   ],
   "videos": [
@@ -645,25 +674,5 @@
       "destaque": false,
       "categoria": "testemunhos"
     }
-  ],
-  "contribuicao": {
-    "pix": {
-      "chave": "45.310.554/0001-23",
-      "banco": "Banco do Brasil",
-      "titular": "Primeira Igreja Batista Em Franca/SP",
-      "qrCodeUrl": "./src/assets/QRcode.png"
-    },
-    "contaBancaria": {
-      "banco": "Banco do Itaú",
-      "agencia": "0000",
-      "conta": "00000-0",
-      "titular": "Primeira Igreja Batista Em Franca/SP",
-      "cnpj": "45.310.554/0001-23"
-    },
-    "contato": {
-      "telefone": "(16) 3403-4383",
-      "whatsapp": "(16) 3403-4383",
-      "email": "financeiro@pib.org.br"
-    }
-  }
+  ]
 }

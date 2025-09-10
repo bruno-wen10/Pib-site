@@ -12,12 +12,14 @@ import {
   PageContainer,
   SaibaMaisButton,
   Title,
-} from "./MinisterioListPage";
+} from "./MinisterioListPage-Styled";
 import { useMinisterios } from "@/hooks/context/use-Ministerios-List";
 
 const MinisteriosListPage = () => {
   const { ministerios, isLoading, error } = useMinisterios();
   console.log("MinisteriosListPage - Dados dos ministérios:", ministerios);
+
+  
 
   if (isLoading) {
     return <LoadingText>Carregando ministérios...</LoadingText>;
@@ -45,12 +47,12 @@ const MinisteriosListPage = () => {
             style={{ "--card-index": index } as React.CSSProperties}
           >
             <CardImage
-              src={ministerio.imagem}
-              alt={`Imagem do Ministério ${ministerio.nome}`}
+              src={ministerio.imagem_banner}
+              alt={`Imagem do Ministério ${ministerio.nome_ministerio}`}
             />
             <CardContent>
-              <CardTitle>{ministerio.nome}</CardTitle>
-              <CardDescription>{ministerio.descricaoCurta}</CardDescription>
+              <CardTitle>{ministerio.nome_ministerio}</CardTitle>
+              <CardDescription>{ministerio.descricao_ministerio}</CardDescription>
               <SaibaMaisButton to={`/ministerios/${ministerio.slug}`}>
                 Saiba Mais
               </SaibaMaisButton>

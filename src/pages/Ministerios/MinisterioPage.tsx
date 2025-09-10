@@ -2,7 +2,7 @@ import React from 'react';
 import {useMinisterio} from'../../hooks/context/use-Ministerio-Page'
 
 import { FaArrowLeft, FaUserTie, FaEnvelope, FaCalendarAlt, FaPhotoVideo } from 'react-icons/fa';
-import { ErrorText, LoadingText, PageContainer } from './MinisterioListPage';
+import { ErrorText, LoadingText, PageContainer } from './MinisterioListPage-Styled';
 import { BackLink, ContentGrid, HeaderSection, InfoItem, MainContent, MediaSection, MinisterioImage, PhotoGrid, ShortDescription, Sidebar, Title, VideoGrid } from './MinisterioPage-Styled';
 
 
@@ -25,46 +25,48 @@ const MinisterioPage: React.FC = () => {
         <FaArrowLeft /> Voltar para todos os Ministérios
       </BackLink>
       <HeaderSection>
-        <MinisterioImage src={ministerio.imagem} alt={`Imagem do Ministério ${ministerio.nome}`} />
-        <Title>{ministerio.nome}</Title>
-        <ShortDescription>{ministerio.descricaoCurta}</ShortDescription>
+        <MinisterioImage src={ministerio.imagem_banner} alt={`Imagem do Ministério ${ministerio.nome_ministerio}`} />
+        <Title>{ministerio.nome_ministerio}</Title>
+        <ShortDescription>{ministerio.descricao_ministerio}</ShortDescription>
       </HeaderSection>
 
       <ContentGrid>
         <MainContent>
           <h2>Sobre o Ministério</h2>
-          <p>{ministerio.descricaoCompleta || 'Mais informações sobre este ministério em breve.'}</p>
+          <p>{ministerio.sobre_ministerio || 'Mais informações sobre este ministério em breve.'}</p>
         </MainContent>
         <Sidebar>
           <h3>Informações</h3>
-          {ministerio.lideranca && (
+          {ministerio.lideranca_responsavel && (
             <div>
               <InfoItem><FaUserTie /> <strong>Liderança:</strong>
               </InfoItem>
-              <div>{ministerio.lideranca}</div>
+              <div>{ministerio.lideranca_responsavel}</div>
               <br />
             </div>
           )}
-          {ministerio.contato && (
+          {ministerio.contato_email  && (
             <div>
               <InfoItem><FaEnvelope /> <strong>Contato:</strong> 
               </InfoItem>
-              <div>{ministerio.contato}</div>
+              <div>{ministerio.contato_email}</div>
               <br />
             </div>
           )}
-          {ministerio.horarioEncontros && (
+          
+          {ministerio.encontros && (
             <div>
               <InfoItem><FaCalendarAlt /> <strong>Encontros:</strong> 
               </InfoItem>
-              <div>{ministerio.horarioEncontros}</div>
+              <div>{ministerio.encontros}</div>
               <br />
             </div>
           )}
         </Sidebar>
       </ContentGrid>
 
-      {(ministerio.fotos && ministerio.fotos.length > 0) || (ministerio.videosYoutube && ministerio.videosYoutube.length > 0) ? (
+      {(ministerio.fotos && ministerio.fotos.length > 0) || null ? (
+        //(ministerio.videosYoutube && ministerio.videosYoutube.length > 0)
         <MediaSection>
           <h2><FaPhotoVideo /> Mídia do Ministério</h2>
           {ministerio.fotos && ministerio.fotos.length > 0 && (
@@ -72,12 +74,12 @@ const MinisterioPage: React.FC = () => {
               <h3>Fotos</h3>
               <PhotoGrid>
                 {ministerio.fotos.map((foto, index) => (
-                  <img key={index} src={foto} alt={`Foto ${index + 1} do Ministério ${ministerio.nome}`} />
+                  <img key={index} src={foto.url} alt={`Foto ${index + 1} do Ministério ${ministerio.nome_ministerio}`} />
                 ))}
               </PhotoGrid>
             </>
           )}
-          {ministerio.videosYoutube && ministerio.videosYoutube.length > 0 && (
+          {/* {ministerio.videosYoutube && ministerio.videosYoutube.length > 0 && (
             <>
               <h3>Vídeos</h3>
               <VideoGrid>
@@ -92,7 +94,7 @@ const MinisterioPage: React.FC = () => {
                 ))}
               </VideoGrid>
             </>
-          )}
+          )} */}
         </MediaSection>
       ) : null}
     </PageContainer>

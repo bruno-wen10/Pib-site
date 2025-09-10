@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { theme } from '../../styles/theme';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
-import axios from 'axios';
 import { ContactInfoItem, FooterBottom, FooterContainer, FooterContent, FooterSection, LogoFooter, SocialLinks } from './Footer-style';
 import LogoIgr from '../../assets/logos/logoPIB.png'
 
@@ -33,19 +32,14 @@ const Footer: React.FC = () => {
   useEffect(() => {
     const fetchFooterData = async () => {
       try {
-        // Supondo que os dados do footer estão em /contribuicao ou uma nova rota /footerInfo
-        // Por agora, vou usar /contribuicao e adaptar para o que tem lá, ou criar um mock se não tiver.
-        // Idealmente, o db.json teria uma entrada "footerInfo"
-        const response = await axios.get('http://localhost:3001/contribuicao'); 
-        const dbData = response.data; // Dados da rota /contribuicao
+        
 
-        // Adaptar os dados para a estrutura FooterData
-        // Se o db.json não tiver esses campos, eles serão undefined e não renderizados
+        
         const data: FooterData = {
           endereco: " R. José de Alencar, 2601", // Placeholder
           cidadeEstadoCep: "Estacao, Franca - SP, 14405-208", // Placeholder
-          telefone: dbData.contato?.telefone || "(16) 3403-4383",
-          email: dbData.contato?.email || "contato@pib.org.br",
+          telefone:  "(16) 3403-4383",
+          email: "pibfranca@pibfranca.org.br",
           redesSociais: {
             facebook: "https://www.facebook.com/pibfrancaoficial/?locale=pt_BR", // Placeholder
             instagram: "https://www.instagram.com/pibfranca/", // Placeholder
@@ -70,7 +64,7 @@ const Footer: React.FC = () => {
           endereco: " R. José de Alencar, 2601", // Placeholder
           cidadeEstadoCep: "Estacao, Franca - SP, 14405-208", // Placeholder
           telefone: "(16) 3403-4383",
-          email: "contato@example.com",
+          email: "pibfranca@pibfranca.org.br",
           redesSociais: {
             facebook: "#",
             instagram: "#",

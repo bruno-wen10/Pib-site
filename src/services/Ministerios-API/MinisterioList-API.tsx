@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 
-const BASE_URL = 'http://localhost:3001';
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 export const fetchMinisteriosList = async (): Promise<MinisteriosData> => {
 	try {

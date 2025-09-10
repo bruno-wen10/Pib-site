@@ -4,7 +4,7 @@ import axios from "axios";
 
 
 
-
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 export const fetchMinisterios = async(slug: string):Promise<Ministerio> =>{
 
@@ -12,7 +12,7 @@ export const fetchMinisterios = async(slug: string):Promise<Ministerio> =>{
         throw new Error('Slug não fornecido');
     }
     try {
-        const response = await axios.get(`http://localhost:3001/ministerios?slug=${slug}`)
+        const response = await axios.get(`${BASE_URL}/ministerios?slug=${slug}`)
         if(response.data && response.data.length >0){
             return response.data[0]
         } else{

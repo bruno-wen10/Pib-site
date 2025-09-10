@@ -1,26 +1,22 @@
+import { Evento } from "@/types/events";
 import axios from "axios";
-import { Eventos } from "../../types/events";
 
-
-
-export const fetchEventos = async(id: string):Promise<Eventos> =>{
+export const fetchEventoById = async (id: string): Promise<Evento> => {
   if (!id) {
-      throw new Error('ID não fornecido');
+    throw new Error("ID não fornecido");
   }
   try {
-      const response = await axios.get(`http://localhost:3001/eventos?id=${id}`)
-        if(response.data && response.data.length >0){
-            return response.data[0]
-        } else{
-            throw new Error('Evento não encontrado');
-        }
-    } catch (error) {
-        throw new Error('Erro ao buscar Evento');
+    console.log(`Buscando evento com ID: ${id}`);
+    const response = await axios.get(`http://localhost:3000/eventos/${id}`);
+    console.log("Dados do evento recebidos:", response.data);
+    if (response.data) {
+      return response.data;
+    } else {
+      throw new Error("Evento não encontrado");
     }
+  } catch (error) {
+    throw new Error("Erro ao buscar Evento");
+  }
+};
 
 
-
-
-
-
-}

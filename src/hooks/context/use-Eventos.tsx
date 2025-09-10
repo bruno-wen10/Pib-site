@@ -1,55 +1,49 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
-import { Eventos } from "@/types/events";
-import { fetchEventos } from "../../services/Eventos-API/eventos-API";
-import { useParams } from "react-router-dom";
+import { createContext, useContext, useState, ReactNode, useCallback } from "react";
+import { Evento } from "@/types/events";
+import { fetchEventoById } from "@/services/Eventos-API/eventos-API";
 
-// Tipo do contexto
 type EventosContextType = {
-  evento: Eventos | null;
+  evento: Evento | null;
   isLoading: boolean;
   error: string | null;
+  carregarEvento: (id: string) => Promise<void>;
 };
 
-// Criando o contexto
 const EventosContext = createContext<EventosContextType | undefined>(undefined);
 
-// Provider
 export const EventosProvider = ({ children }: { children: ReactNode }) => {
-  const [evento, setEvento] = useState<Eventos | null>(null);
+  const [evento, setEvento] = useState<Evento | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setErro] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
-  const { id } = useParams<{ id: string }>(); // id sempre vem como string | undefined
+  const carregarEvento = useCallback(async (id: string) => {
+    if (!id) {
+      setError("ID do evento não fornecido");
+      setIsLoading(false);
+      return;
+    }
 
-  useEffect(() => {
-    const carregar = async () => {
-      if (!id) { // Garantindo que id exista
-        setErro("ID do evento não fornecido");
-        setIsLoading(false);
-        return;
-      }
-
-      try {
-        const dados = await fetchEventos(id); 
-        setEvento(dados);
-      } catch (err) {
-        setErro((err as Error).message);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    carregar();
-  }, [id]);
+    setIsLoading(true);
+    setError(null);
+    
+    try {
+      const dados = await fetchEventoById(id);
+      setEvento(dados);
+    } catch (err) {
+      setError((err as Error).message);
+      setEvento(null);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
 
   return (
-    <EventosContext.Provider value={{ evento, isLoading, error }}>
+    <EventosContext.Provider value={{ evento, isLoading, error, carregarEvento }}>
       {children}
     </EventosContext.Provider>
   );
 };
 
-// Hook para usar o contexto
 export const useEventos = () => {
   const context = useContext(EventosContext);
   if (!context) {
@@ -57,3 +51,5 @@ export const useEventos = () => {
   }
   return context;
 };
+
+

@@ -27,14 +27,16 @@ import {
   YoutubeSection,
 } from "./HomePage-style";
 import { useYoutube } from "@/hooks/context/use-Live-Youtube";
+
 // Interfaces
 interface Evento {
-  id: number;
-  titulo: string;
-  descricao: string;
-  imagem: string;
+  id: string;
+  nome_evento: string;
+  descricao?: string | null;
+  imagemEvento?: string | null;
   destaque?: boolean;
-  data?: string; // Adicionado para consistência, mesmo que não usado diretamente no card do hero
+  dataInicio_evento?: string | null;
+  dataFim_evento?: string | null;
 }
 
 interface ContribuicaoData {
@@ -42,9 +44,21 @@ interface ContribuicaoData {
     chave: string;
     qrCodeUrl: string;
   };
+  contaBancaria?: {
+    banco: string;
+    agencia: string;
+    conta: string;
+    titular: string;
+    cnpj: string;
+  };
+  contato?: {
+    telefone: string;
+    whatsapp: string;
+    email: string;
+  };
 }
 
-const HomePage= () => {
+const HomePage = () => {
   const [heroEvents, setHeroEvents] = useState<Evento[]>([]);
   const [contribData, setContribData] = useState<ContribuicaoData | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -53,41 +67,55 @@ const HomePage= () => {
 
   const { live, videosRecentes } = useYoutube();
 
-  useEffect(() => {
-    alert("⚠️ Atenção!Este site ainda não está finalizado e precisa de alguns ajustes. " +
-      "Ele foi postado para que os irmãos da igreja possam acompanhar o nosso avanço. " +
-      "O projeto já está quase concluído, mas o banco de dados ainda está sendo criado. " +
-      "Por isso, todas as informações exibidas aqui podem conter erros ou estarem incompletas. " +
-      "Agradecemos a compreensão de todos.");
-  }, []);
-
+  // 🔹 Dados locais de contribuição
+  const contribuicao: ContribuicaoData[] = [
+    {
+      pix: {
+        chave: "45.310.554/0001-23",
+        qrCodeUrl: "./src/assets/QRcode.png",
+      },
+      contaBancaria: {
+        banco: "Banco do Itaú",
+        agencia: "0000",
+        conta: "00000-0",
+        titular: "Primeira Igreja Batista Em Franca/SP",
+        cnpj: "45.310.554/0001-23",
+      },
+      contato: {
+        telefone: "(16) 3403-4383",
+        whatsapp: "1634034383",
+        email: "pibfranca@pibfranca.org.br",
+      },
+    },
+  ];
+  const BASE_URL = import.meta.env.VITE_API_URL  || "http://localhost:3000";
+  // 🔹 Carrega dados de eventos (continua pela API) + contribuição local
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log();
         setLoading(true);
-        const [eventosRes, contribuicaoRes] = await Promise.all([
-          axios.get("http://localhost:3001/eventos?destaque=true&_limit=5"), // Max 5 hero events
-          axios.get("http://localhost:3001/contribuicao"),
-        ]);
 
-        setHeroEvents(eventosRes.data);
+        const eventosRes = await axios.get<Evento[]>(
+          `${BASE_URL}/eventos`
+        );
+        // filtra só os que têm destaque = true
+      const eventosDestaque = eventosRes.data.filter((e) => e.destaque);
 
-        
-
-        setContribData(contribuicaoRes.data);
+        setHeroEvents(eventosDestaque);
+        setContribData(contribuicao[0]); // usa os dados locais
         setError(null);
       } catch (err) {
-        console.error("Erro ao buscar dados para a Home:", err);
-        setError(
-          "Não foi possível carregar todas as informações da página inicial."
-        );
+        console.error("Erro ao buscar eventos:", err);
+        setError("Não foi possível carregar todas as informações da página inicial.");
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     };
+
     fetchData();
   }, []);
 
+  // Funções de navegação no carrossel
   const nextSlide = () => {
     if (heroEvents.length === 0) return;
     setCurrentSlide(
@@ -102,14 +130,16 @@ const HomePage= () => {
     );
   };
 
+  // Auto-slide
   useEffect(() => {
-    if (heroEvents.length <= 1) return; // No auto-slide if 0 or 1 event
+    if (heroEvents.length <= 1) return;
     const timer = setTimeout(() => {
       nextSlide();
     }, 7000);
     return () => clearTimeout(timer);
   }, [currentSlide, heroEvents]);
 
+  // Estado da página
   if (loading) {
     return <LoadingText>Carregando página inicial...</LoadingText>;
   }
@@ -117,40 +147,40 @@ const HomePage= () => {
   if (error) {
     return <ErrorText>{error}</ErrorText>;
   }
+
   const liveVideo = live?.items?.[0]?.id?.videoId;
-  //const liveVideoTitle = live?.items?.[0]?.snippet?.title;
+
   return (
     <>
-    
       {heroEvents.length > 0 && (
         <HeroSection
-          style={{ backgroundImage: `url(${heroEvents[currentSlide].imagem})` }}
+          style={{
+    backgroundImage: `url(${heroEvents[currentSlide].imagemEvento})`,
+  }}
         >
-          {heroEvents.length > 0 && (
-            <>
-              <CarouselNavButton
-                className="prev"
-                onClick={prevSlide}
-                aria-label="Slide Anterior"
-              >
-                <FaChevronLeft />
-              </CarouselNavButton>
-              <CarouselNavButton
-                className="next"
-                onClick={nextSlide}
-                aria-label="Próximo Slide"
-              >
-                <FaChevronRight />
-              </CarouselNavButton>
-            </>
-          )}
+          <>
+            <CarouselNavButton
+              className="prev"
+              onClick={prevSlide}
+              aria-label="Slide Anterior"
+            >
+              <FaChevronLeft />
+            </CarouselNavButton>
+            <CarouselNavButton
+              className="next"
+              onClick={nextSlide}
+              aria-label="Próximo Slide"
+            >
+              <FaChevronRight />
+            </CarouselNavButton>
+          </>
           <HeroContent>
-            <h1>{heroEvents[currentSlide].titulo}</h1>
-            <p>{heroEvents[currentSlide].descricao}</p>
-            <ContribuaButton as={Link} to="/eventos">
-              Ver Eventos
-            </ContribuaButton>
-          </HeroContent>
+    <h1>{heroEvents[currentSlide].nome_evento}</h1>
+    <p>{heroEvents[currentSlide].descricao}</p>
+    <ContribuaButton as={Link} to="/eventos">
+      Ver Eventos
+    </ContribuaButton>
+  </HeroContent>
         </HeroSection>
       )}
 
@@ -169,19 +199,20 @@ const HomePage= () => {
           </ProgramacaoCard>
         </ProgramacaoGrid>
       </Section>
+
       <Section>
         <SectionTitle>Cultos Ao Vivo e Recentes</SectionTitle>
         <YoutubeSection>
           <VideoPlayerPlaceholder>
             {liveVideo ? (
               <iframe
-                 width="100%"
-                 height="500"
-                 src={`https://www.youtube.com/embed/${liveVideo}?autoplay=1`}
-                 title="Transmissão ao Vivo"
-                 frameBorder="0"
-                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                 allowFullScreen
+                width="100%"
+                height="500"
+                src={`https://www.youtube.com/embed/${liveVideo}?autoplay=1`}
+                title="Transmissão ao Vivo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               ></iframe>
             ) : (
               <p>
