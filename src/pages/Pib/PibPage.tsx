@@ -19,6 +19,8 @@ const PibPage = () => {
 
       <Section>
         <SectionTitle>Nossa História</SectionTitle>
+        <br />
+        <br />
         <ImagePlaceholder>
           <iframe
             width="600"
@@ -31,6 +33,8 @@ const PibPage = () => {
             allowFullScreen
           ></iframe>
         </ImagePlaceholder>
+        <br />
+        <br />
         <Paragraph>
           A Primeira Igreja Batista em Franca-SP tem suas raízes na rica
           história do movimento batista no Brasil, que se iniciou com a chegada

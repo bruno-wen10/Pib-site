@@ -1,15 +1,15 @@
-export interface Comentario {
-  id: number;
-  autor: string;
-  data: string;
-  texto: string;
-}
+// export interface Comentario {
+//   id: number;
+//   autor: string;
+//   data: string;
+//   texto: string;
+// }
 
 export interface PedidoPiedade {
-  id: number;
-  autor: string;
-  data: string;
-  texto: string;
+  id: string;
+  nome: string;
+  pedido_oracao: string;
   interacoes: number;
-  comentarios: Comentario[];
+  data_criacao: string;
+  //comentarios: Comentario[];
 }

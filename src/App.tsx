@@ -79,11 +79,11 @@ function App() {
                     {/* <Route path="/inscricoes" element={<InscricoesPage />} /> */}
                     <Route path="/cultos" element={<CultosPage />} />
                     <Route
-                      path="/mural-piedade"
+                      path="/mural-oracao"
                       element={<MuralPiedadePage />}
                     />
                     <Route
-                      path="/mural-piedade/novo"
+                      path="/mural-oracao/novo"
                       element={<NovoPedidoMuralPage />}
                     />
                     <Route path="/contribua" element={<ContribuaPage />} />

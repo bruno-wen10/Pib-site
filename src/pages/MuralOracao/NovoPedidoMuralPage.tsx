@@ -6,59 +6,58 @@ import { ButtonGroup, CancelButton, ErrorMessage, Form, FormGroup, Input, Label,
 
 
 const NovoPedidoMuralPage: React.FC = () => {
-  const [autor, setAutor] = useState("");
-  const [texto, setTexto] = useState("");
+  const [nome, setNome] = useState("");
+  const [pedido, setPedido] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    setLoading(true);
-    setError(null);
-    setSuccess(null);
+ const handleSubmit = async (event: React.FormEvent) => {
+  event.preventDefault();
+  setLoading(true);
+  setError(null);
+  setSuccess(null);
 
-    if (!autor.trim() || !texto.trim()) {
-      setError("Por favor, preencha seu nome e o pedido de oração.");
-      setLoading(false);
-      return;
-    }
-
-    const novoPedido = {
-      autor,
-      texto,
-      data: new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" }),
-      interacoes: 0,
-      comentarios: [],
-    };
-
-    try {
-      await axios.post("http://localhost:3001/muralPiedade", novoPedido);
-      setSuccess("Seu pedido de oração foi enviado com sucesso!");
-      setAutor("");
-      setTexto("");
-      setTimeout(() => {
-        navigate("/mural-piedade");
-      }, 2000);
-    } catch (err) {
-      console.error("Erro ao enviar pedido:", err);
-      setError("Falha ao enviar seu pedido. Tente novamente mais tarde.");
-    }
+  if (!nome.trim() || !pedido.trim()) {
+    setError("Por favor, preencha seu nome e o pedido de oração.");
     setLoading(false);
-  };
+    return;
+  }
+
+  const novoPedido = {
+  nome,
+  pedido_oracao: pedido,           
+  interacoes: 0,
+  data_criacao: new Date().toISOString(),
+};
+
+  try {
+    await axios.post(import.meta.env.VITE_API_URL + "/mural-oracao", novoPedido);
+
+    setSuccess("Seu pedido de oração foi enviado com sucesso!");
+    setNome("");
+    setPedido("");
+    setTimeout(() => navigate("/mural-oracao"), 2000);
+  } catch (err) {
+    console.error("Erro ao enviar pedido:", err);
+    setError("Falha ao enviar seu pedido. Tente novamente mais tarde.");
+  }
+
+  setLoading(false);
+};
 
   return (
     <PageContainer>
       <Title>Novo Pedido de Oração</Title>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
-          <Label htmlFor="autor">Seu Nome </Label>
+          <Label htmlFor="nome">Seu Nome </Label>
           <Input
             type="text"
-            id="autor"
-            value={autor}
-            onChange={(e) => setAutor(e.target.value)}
+            id="nome"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
             placeholder="Ex: João Silva"
             required
           />
@@ -66,9 +65,9 @@ const NovoPedidoMuralPage: React.FC = () => {
         <FormGroup>
           <Label htmlFor="texto">Seu Pedido de Oração</Label>
           <Textarea
-            id="texto"
-            value={texto}
-            onChange={(e) => setTexto(e.target.value)}
+            id="pedido"
+            value={pedido}
+            onChange={(e) => setPedido(e.target.value)}
             placeholder="Descreva aqui seu pedido..."
             required
           />
@@ -76,7 +75,7 @@ const NovoPedidoMuralPage: React.FC = () => {
         {error && <ErrorMessage>{error}</ErrorMessage>}
         {success && <SuccessMessage>{success}</SuccessMessage>}
         <ButtonGroup>
-          <CancelButton type="button" onClick={() => navigate("/mural-piedade")} disabled={loading}>
+          <CancelButton type="button" onClick={() => navigate("/mural-oracao")} disabled={loading}>
             <FaTimes /> Cancelar
           </CancelButton>
           <SubmitButton type="submit" disabled={loading}>

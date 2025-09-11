@@ -77,7 +77,7 @@ const Header: React.FC = () => {
           {/* <StyledNavLink to="/inscricoes" onClick={closeMobileMenu}>Inscrições</StyledNavLink> */}
           <StyledNavLink to="/cultos" onClick={closeMobileMenu}>Cultos</StyledNavLink>
           <StyledNavLink to="/contribua" onClick={closeMobileMenu}>Contribuir</StyledNavLink>
-          <StyledNavLink to="/mural-piedade" onClick={closeMobileMenu}>Mural Oração</StyledNavLink>
+          <StyledNavLink to="/mural-oracao" onClick={closeMobileMenu}>Mural Oração</StyledNavLink>
           {/* {isLoggedIn && (
           )} */}
           
