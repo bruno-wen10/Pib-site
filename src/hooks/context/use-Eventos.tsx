@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, ReactNode, useCallback } from "react";
 import { Evento } from "@/types/events";
-import { fetchEventoById } from '@/services/Eventos-API/eventos-API.ts';
+import { fetchEventoById } from '../../services/Eventos-API/eventos-API';
+
 
 
 
