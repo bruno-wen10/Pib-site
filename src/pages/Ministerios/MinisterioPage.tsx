@@ -3,7 +3,7 @@ import {useMinisterio} from'../../hooks/context/use-Ministerio-Page'
 
 import { FaArrowLeft, FaUserTie, FaEnvelope, FaCalendarAlt, FaPhotoVideo } from 'react-icons/fa';
 import { ErrorText, LoadingText, PageContainer } from './MinisterioListPage-Styled';
-import { BackLink, ContentGrid, HeaderSection, InfoItem, MainContent, MediaSection, MinisterioImage, PhotoGrid, ShortDescription, Sidebar, Title, VideoGrid } from './MinisterioPage-Styled';
+import { BackLink, ContentGrid, HeaderSection, InfoItem, MainContent, MediaSection, MinisterioImage, PhotoGrid, ShortDescription, Sidebar, Title } from './MinisterioPage-Styled';
 
 
 const MinisterioPage: React.FC = () => {

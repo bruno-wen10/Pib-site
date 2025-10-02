@@ -99,9 +99,9 @@ const HomePage = () => {
           `${BASE_URL}/eventos`
         );
         // filtra só os que têm destaque = true
-      const eventosDestaque = eventosRes.data.filter((e) => e.destaque);
+      //const eventosDestaque = eventosRes.data.filter((e) => e.destaque);
 
-        setHeroEvents(eventosDestaque);
+        setHeroEvents(eventosRes.data.slice(0, 5)); // pega os primeiros 5 eventos
         setContribData(contribuicao[0]); // usa os dados locais
         setError(null);
       } catch (err) {
